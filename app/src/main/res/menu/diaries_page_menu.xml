@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.ui.DiariesActivity">
+
+    <item
+        android:id="@+id/action_new"
+        android:title="Add"
+        android:icon="@drawable/m_add"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_refresh"
+        android:title="Refresh"
+        android:icon="@drawable/refresh"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_switch_view"
+        android:title="Switch View"
+        android:icon="@drawable/m_list"
+        app:showAsAction="ifRoom" />
+
+</menu>

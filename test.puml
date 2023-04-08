@@ -1,0 +1,85 @@
+@startuml
+class SplashActivity {
+- ImageView mLogo
+- TextView mainTitle
+- void initializeWidgets()
+- void proceed()
+- void preloadDiaries()
+- void showSplashAnimation()
+# void attachBaseContext(Context)
+# void onCreate(Bundle)
+}
+class DetailActivity {
+- TextView titleTV
+- FloatingActionButton editFAB
+- Diary receivedDiary
+- CollapsingToolbarLayout mCollapsingToolbarLayout
+- void initializeWidgets()
+- void receiveAndShowData()
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
++ void onClick(View)
+# void attachBaseContext(Context)
++ void onBackPressed()
+# void onCreate(Bundle)
+}
+class DiariesActivity {
+- RecyclerView rv
+- HorizontalPicker picker
+- BottomNavigationView bottomNavigationView
+- SectionedExpandableLayoutHelper sectionedLayout
+- boolean defaultPage
+- DiaryViewModel diaryViewModel
+- boolean isScrolling
+- ColumnChartView chartView
+- ColumnChartData columnChartData
+- RadioGroup radioGroup
+- void initializeViews()
+- void listenToBottomNavigationClicks()
+- void listenToRecyclerViewScrolls()
+- void bindTimeManager()
+- void bindDairiesCat()
+- void bindDairies()
+- void reloadDiaries()
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+# void attachBaseContext(Context)
++ void onBackPressed()
++ void onDateSelected(DateTime)
++ void itemClicked(Diary)
++ void itemClicked(Section)
+# void onCreate(Bundle)
+}
+class CRUDActivity {
+- EditText titleTxt
+- TextView headerTxt
+- DateTimePickerEditText dateTxt
+- Context c
+- DiaryViewModel diaryViewModel
+- Diary receivedDiary
+- String[] times
+- String[] categories
+- void initializeWidgets()
+- void listenToEditTextClicks()
+- void insertDiary(String,String,String,String,String)
+- void insertData()
+- void updateDiary(String,String,String,String,String)
+- void updateData()
+- void deleteData()
++ void onBackPressed()
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+# void attachBaseContext(Context)
+# void onResume()
+# void onCreate(Bundle)
+}
+
+
+AppCompatActivity <|-- SplashActivity
+OnClickListener <|.. DetailActivity
+AppCompatActivity <|-- DetailActivity
+DatePickerListener <|.. DiariesActivity
+ItemClickListener <|.. DiariesActivity
+AppCompatActivity <|-- DiariesActivity
+AppCompatActivity <|-- CRUDActivity
+@enduml

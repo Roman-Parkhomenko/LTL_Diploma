@@ -1,0 +1,19 @@
+#Internal package file, do not edit.
+#Sat Apr 08 06:06:48 PDT 2023
+3.set=DEX
+3.path=classes.dex
+2.base=C\:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\merged_assets\\debug\\out
+0.path=fonts/chalkboard.ttf
+count=4
+1.set=ASSET
+2.path=fonts/RobotoCondensed-Regular.ttf
+2.baseType=DIRECTORY
+0.base=C\:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\merged_assets\\debug\\out
+2.set=ASSET
+3.base=C\:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+1.baseType=DIRECTORY
+3.baseType=DIRECTORY
+1.path=fonts/Roboto-Light.ttf
+0.baseType=DIRECTORY
+1.base=C\:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\merged_assets\\debug\\out
+0.set=ASSET

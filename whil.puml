@@ -1,0 +1,19 @@
+@startuml
+class Utils {
++ {static} String DATE_FORMAT
++ {static} void show(Context,String)
++ {static} boolean validate(EditText)
++ {static} void clearEditTexts(EditText)
++ {static} void openActivity(Context,Class)
++ {static} void showInfoDialog(AppCompatActivity,String,String)
++ {static} void selectDialogItem(Context,boolean,EditText)
++ {static} Date giveMeDate(String)
++ {static} void sendDiaryToActivity(Context,Diary,Class)
++ {static} Diary receiveDiary(Intent,Context)
++ {static} ArrayList<Diary> getDiariesForThisTimeOfDay(List<Diary>,String)
++ {static} ArrayList<Diary> getDiariesForThisCategory(List<Diary>,String)
++ {static} ArrayList<Diary> getDiariesForThisDate(List<Diary>,String)
++ {static} ArrayList<List<Diary>> getAllDiariesGroupedByDates(List<Diary>)
++ {static} ArrayList<List<Diary>> getAllDiariesGroupedByCategory(List<Diary>)
+}
+@enduml

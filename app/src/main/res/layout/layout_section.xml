@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    app:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12"
+            android:background="@drawable/theme_color"
+            android:paddingStart="@dimen/section_text_padding_left"
+            android:paddingLeft="@dimen/section_text_padding_left"
+            android:paddingTop="@dimen/section_padding"
+            android:paddingBottom="@dimen/section_padding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/section_text_size" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_section"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.88"
+            android:background="@drawable/selector_section_toggle"
+            android:contentDescription="Change state of section"
+            android:padding="@dimen/section_padding"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

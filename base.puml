@@ -1,0 +1,19 @@
+@startuml
+class info.Parkhomenko.personaldiary.data.dao.DiaryDAO_Impl {
+- RoomDatabase __db
+- EntityInsertionAdapter __insertionAdapterOfDiary
+- EntityDeletionOrUpdateAdapter __deletionAdapterOfDiary
+- EntityDeletionOrUpdateAdapter __updateAdapterOfDiary
+- SharedSQLiteStatement __preparedStmtOfDeleteAll
++ long insert(Diary)
++ int delete(Diary)
++ int update(Diary)
++ int deleteAll()
++ LiveData<List<Diary>> selectAll()
++ LiveData<List<Diary>> selectByDate(String)
++ LiveData<List<Diary>> selectByCategory(String)
+}
+
+
+info.Parkhomenko.personaldiary.data.dao.DiaryDAO <|.. info.Parkhomenko.personaldiary.data.dao.DiaryDAO_Impl
+@enduml

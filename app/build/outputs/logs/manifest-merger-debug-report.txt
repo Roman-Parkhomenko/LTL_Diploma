@@ -1,0 +1,272 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\b18ee25b436267569f51feb4c727c28c\AndroidManifest.xml:17:1-24:12
+MERGED from [android.helper:datetimepickeredittext:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\372df3c465363b39b16fcfaa46ae874e\AndroidManifest.xml:2:1-11:12
+MERGED from [com.yarolegovich:lovely-dialog:1.1.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\c2d97c2860dafb8b9b27c339f55854a7\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\bdbbede8462f121d8968013c66cb42b5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1fd9c08f9b899b3b4be7b1debef693c4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.jhonnyx2012:horizontal-picker:1.0.6] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f6c76b85878dd159a02838be6ccec634\AndroidManifest.xml:2:1-17:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\2c301bc7287f6e123e0827609e7808d4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\13db3d5525550fabc123fe5b5dcc1f83\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.room:room-runtime:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\001e9f5f35f51149509dc45597861eb8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\8774a71de87b818bd94948f88c5fbc09\AndroidManifest.xml:17:1-25:12
+MERGED from [com.github.ivbaranov:materiallettericon:0.2.3] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\993cbeaa8935f265c177d966bb20f0b3\AndroidManifest.xml:2:1-13:12
+MERGED from [io.github.inflationx:calligraphy3:3.1.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\8075eaabc92793f84386d8dfd68b3f25\AndroidManifest.xml:2:1-13:12
+MERGED from [io.github.inflationx:viewpump:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\80616caf9e09327ad9864324f570fa71\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\80ba97d940e04d6a4fd81fc8859239f7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\9117ef5318a773d23ba88d5373a4b53f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\9e05537b3458cde1d52ce1e629f1b869\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\0bf69ca4410580d205f114a025455fb7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\10a4db6b5a720acb1c1d82ff8d80d983\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\926702bf0c904805d3789ce0772716c8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\690a4a2475301b0e4ecf8123e5e45c77\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\0903bb3132da642ecc30a322807a34b1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\58345c5ab3c2169a97d2ff2570a039d7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\4d4374f3921827276824daf85f97783b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\fefe3e3cddf00e14cbb318a92ebbc12e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\116a7c8b9c25a095fe106e72f92426bc\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\bd0d409bfca3308c496be94ddc95178b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\01deaa30a93c16bc86135ca79776ce29\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\296ecbf46cca548b4ebd75dad1687a6f\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\3522aa5d60274b234552467e0f53f56c\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1bbf4e83b3bd8200c3145992fe1e90c1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\c11290a685e88d80c6d17124ead826a7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\61d456a698d30e5e73ce2bf35e1cac12\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\17b124e06097d1e2141ab8de0f2ada03\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\5af259485f962805503e073e8118e6cd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\723ad1c61e7d7dd3e029b7e7665614f7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f5e58a34c6d7109629fb84fb64029319\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\3e30b9f280f63651a89ad31a1dcebb4d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1fa692ea8c7d2f441f2e184755b49534\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\b274f8f42b473640d82d663e5e169663\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\38cfc9f94badcfbc19c0e5d3e49525a2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\d52a34130ecdb83d9e17769120edbb79\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\ecad62e1a90d3fa03dfa9c20897d6e26\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\d9c32854a9738e2ff666c0d7d892d0f0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+	package
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:3:9-49
+		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+	xmlns:dist
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:2:13-69
+	android:versionCode
+		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:4:9-70
+	android:name
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:4:26-68
+dist:module
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:5:9-6:35
+	dist:instant
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:6:13-32
+application
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:8:5-37:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\b18ee25b436267569f51feb4c727c28c\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\b18ee25b436267569f51feb4c727c28c\AndroidManifest.xml:22:5-20
+MERGED from [android.helper:datetimepickeredittext:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\372df3c465363b39b16fcfaa46ae874e\AndroidManifest.xml:9:5-20
+MERGED from [android.helper:datetimepickeredittext:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\372df3c465363b39b16fcfaa46ae874e\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1fd9c08f9b899b3b4be7b1debef693c4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1fd9c08f9b899b3b4be7b1debef693c4\AndroidManifest.xml:9:5-20
+MERGED from [com.github.jhonnyx2012:horizontal-picker:1.0.6] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f6c76b85878dd159a02838be6ccec634\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.jhonnyx2012:horizontal-picker:1.0.6] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f6c76b85878dd159a02838be6ccec634\AndroidManifest.xml:11:5-15:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\8774a71de87b818bd94948f88c5fbc09\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\8774a71de87b818bd94948f88c5fbc09\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.ivbaranov:materiallettericon:0.2.3] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\993cbeaa8935f265c177d966bb20f0b3\AndroidManifest.xml:11:5-20
+MERGED from [com.github.ivbaranov:materiallettericon:0.2.3] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\993cbeaa8935f265c177d966bb20f0b3\AndroidManifest.xml:11:5-20
+MERGED from [io.github.inflationx:calligraphy3:3.1.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\8075eaabc92793f84386d8dfd68b3f25\AndroidManifest.xml:11:5-20
+MERGED from [io.github.inflationx:calligraphy3:3.1.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\8075eaabc92793f84386d8dfd68b3f25\AndroidManifest.xml:11:5-20
+MERGED from [io.github.inflationx:viewpump:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\80616caf9e09327ad9864324f570fa71\AndroidManifest.xml:11:5-20
+MERGED from [io.github.inflationx:viewpump:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\80616caf9e09327ad9864324f570fa71\AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.0.1] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\296ecbf46cca548b4ebd75dad1687a6f\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\296ecbf46cca548b4ebd75dad1687a6f\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\3522aa5d60274b234552467e0f53f56c\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\3522aa5d60274b234552467e0f53f56c\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f5e58a34c6d7109629fb84fb64029319\AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f5e58a34c6d7109629fb84fb64029319\AndroidManifest.xml:22:5-28:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\296ecbf46cca548b4ebd75dad1687a6f\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:12:9-41
+	android:icon
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:11:9-41
+	android:allowBackup
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:14:9-40
+	android:name
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:9:9-58
+activity#info.Parkhomenko.personaldiary.view.ui.SplashActivity
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:15:9-20:20
+	android:theme
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:15:88-122
+	android:name
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:15:19-87
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:16:13-19:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:18:27-74
+activity#info.Parkhomenko.personaldiary.view.ui.DiariesActivity
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:21:9-23:44
+	android:label
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:23:13-42
+	android:name
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:22:13-82
+activity#info.Parkhomenko.personaldiary.view.ui.CRUDActivity
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:24:9-28:99
+	android:parentActivityName
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:28:13-96
+	android:label
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:27:13-48
+	android:theme
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:26:13-45
+	android:name
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:25:13-79
+activity#info.Parkhomenko.personaldiary.view.ui.DetailActivity
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:29:9-32:99
+	android:parentActivityName
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:32:13-96
+	android:label
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:31:13-43
+	android:name
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:30:13-81
+activity#info.Parkhomenko.personaldiary.view.ui.HelperActivity
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:33:9-36:99
+	android:parentActivityName
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:36:13-96
+	android:label
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:34:13-81
+uses-sdk
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\b18ee25b436267569f51feb4c727c28c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\b18ee25b436267569f51feb4c727c28c\AndroidManifest.xml:20:5-44
+MERGED from [android.helper:datetimepickeredittext:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\372df3c465363b39b16fcfaa46ae874e\AndroidManifest.xml:7:5-43
+MERGED from [android.helper:datetimepickeredittext:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\372df3c465363b39b16fcfaa46ae874e\AndroidManifest.xml:7:5-43
+MERGED from [com.yarolegovich:lovely-dialog:1.1.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\c2d97c2860dafb8b9b27c339f55854a7\AndroidManifest.xml:8:5-10:41
+MERGED from [com.yarolegovich:lovely-dialog:1.1.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\c2d97c2860dafb8b9b27c339f55854a7\AndroidManifest.xml:8:5-10:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\bdbbede8462f121d8968013c66cb42b5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\bdbbede8462f121d8968013c66cb42b5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1fd9c08f9b899b3b4be7b1debef693c4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1fd9c08f9b899b3b4be7b1debef693c4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.jhonnyx2012:horizontal-picker:1.0.6] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f6c76b85878dd159a02838be6ccec634\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.jhonnyx2012:horizontal-picker:1.0.6] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f6c76b85878dd159a02838be6ccec634\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\2c301bc7287f6e123e0827609e7808d4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\2c301bc7287f6e123e0827609e7808d4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\13db3d5525550fabc123fe5b5dcc1f83\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\13db3d5525550fabc123fe5b5dcc1f83\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\001e9f5f35f51149509dc45597861eb8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\001e9f5f35f51149509dc45597861eb8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\8774a71de87b818bd94948f88c5fbc09\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\8774a71de87b818bd94948f88c5fbc09\AndroidManifest.xml:20:5-44
+MERGED from [com.github.ivbaranov:materiallettericon:0.2.3] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\993cbeaa8935f265c177d966bb20f0b3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.ivbaranov:materiallettericon:0.2.3] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\993cbeaa8935f265c177d966bb20f0b3\AndroidManifest.xml:7:5-9:41
+MERGED from [io.github.inflationx:calligraphy3:3.1.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\8075eaabc92793f84386d8dfd68b3f25\AndroidManifest.xml:7:5-9:41
+MERGED from [io.github.inflationx:calligraphy3:3.1.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\8075eaabc92793f84386d8dfd68b3f25\AndroidManifest.xml:7:5-9:41
+MERGED from [io.github.inflationx:viewpump:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\80616caf9e09327ad9864324f570fa71\AndroidManifest.xml:7:5-9:41
+MERGED from [io.github.inflationx:viewpump:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\80616caf9e09327ad9864324f570fa71\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\80ba97d940e04d6a4fd81fc8859239f7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\80ba97d940e04d6a4fd81fc8859239f7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\9117ef5318a773d23ba88d5373a4b53f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\9117ef5318a773d23ba88d5373a4b53f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\9e05537b3458cde1d52ce1e629f1b869\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\9e05537b3458cde1d52ce1e629f1b869\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\0bf69ca4410580d205f114a025455fb7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\0bf69ca4410580d205f114a025455fb7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\10a4db6b5a720acb1c1d82ff8d80d983\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\10a4db6b5a720acb1c1d82ff8d80d983\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\926702bf0c904805d3789ce0772716c8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\926702bf0c904805d3789ce0772716c8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\690a4a2475301b0e4ecf8123e5e45c77\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\690a4a2475301b0e4ecf8123e5e45c77\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\0903bb3132da642ecc30a322807a34b1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\0903bb3132da642ecc30a322807a34b1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\58345c5ab3c2169a97d2ff2570a039d7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\58345c5ab3c2169a97d2ff2570a039d7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\4d4374f3921827276824daf85f97783b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\4d4374f3921827276824daf85f97783b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\fefe3e3cddf00e14cbb318a92ebbc12e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\fefe3e3cddf00e14cbb318a92ebbc12e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\116a7c8b9c25a095fe106e72f92426bc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\116a7c8b9c25a095fe106e72f92426bc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\bd0d409bfca3308c496be94ddc95178b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\bd0d409bfca3308c496be94ddc95178b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\01deaa30a93c16bc86135ca79776ce29\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\01deaa30a93c16bc86135ca79776ce29\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\296ecbf46cca548b4ebd75dad1687a6f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\296ecbf46cca548b4ebd75dad1687a6f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\3522aa5d60274b234552467e0f53f56c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\3522aa5d60274b234552467e0f53f56c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1bbf4e83b3bd8200c3145992fe1e90c1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1bbf4e83b3bd8200c3145992fe1e90c1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\c11290a685e88d80c6d17124ead826a7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\c11290a685e88d80c6d17124ead826a7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\61d456a698d30e5e73ce2bf35e1cac12\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\61d456a698d30e5e73ce2bf35e1cac12\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\17b124e06097d1e2141ab8de0f2ada03\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\17b124e06097d1e2141ab8de0f2ada03\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\5af259485f962805503e073e8118e6cd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\5af259485f962805503e073e8118e6cd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\723ad1c61e7d7dd3e029b7e7665614f7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\723ad1c61e7d7dd3e029b7e7665614f7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f5e58a34c6d7109629fb84fb64029319\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f5e58a34c6d7109629fb84fb64029319\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\3e30b9f280f63651a89ad31a1dcebb4d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\3e30b9f280f63651a89ad31a1dcebb4d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1fa692ea8c7d2f441f2e184755b49534\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1fa692ea8c7d2f441f2e184755b49534\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\b274f8f42b473640d82d663e5e169663\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\b274f8f42b473640d82d663e5e169663\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\38cfc9f94badcfbc19c0e5d3e49525a2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\38cfc9f94badcfbc19c0e5d3e49525a2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\d52a34130ecdb83d9e17769120edbb79\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\d52a34130ecdb83d9e17769120edbb79\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\ecad62e1a90d3fa03dfa9c20897d6e26\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\ecad62e1a90d3fa03dfa9c20897d6e26\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\d9c32854a9738e2ff666c0d7d892d0f0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\d9c32854a9738e2ff666c0d7d892d0f0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f5e58a34c6d7109629fb84fb64029319\AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f5e58a34c6d7109629fb84fb64029319\AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f5e58a34c6d7109629fb84fb64029319\AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f5e58a34c6d7109629fb84fb64029319\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f5e58a34c6d7109629fb84fb64029319\AndroidManifest.xml:24:13-79

@@ -1,0 +1,32 @@
+@startuml
+class info.Parkhomenko.personaldiary.view.ui.SplashActivity {
+}
+class info.Parkhomenko.personaldiary.view.ui.DetailActivity {
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
++ void onClick(View)
++ void onBackPressed()
+}
+class info.Parkhomenko.personaldiary.view.ui.DiariesActivity {
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
++ void onBackPressed()
++ void onDateSelected(DateTime)
++ void itemClicked(Diary)
++ void itemClicked(Section)
+}
+class info.Parkhomenko.personaldiary.view.ui.CRUDActivity {
++ void onBackPressed()
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+}
+
+
+androidx.appcompat.app.AppCompatActivity <|-- info.Parkhomenko.personaldiary.view.ui.SplashActivity
+info.Parkhomenko.personaldiary.view.ui.OnClickListener <|.. info.Parkhomenko.personaldiary.view.ui.DetailActivity
+androidx.appcompat.app.AppCompatActivity <|-- info.Parkhomenko.personaldiary.view.ui.DetailActivity
+com.github.jhonnyx2012.horizontalpicker.DatePickerListener <|.. info.Parkhomenko.personaldiary.view.ui.DiariesActivity
+info.Parkhomenko.personaldiary.view.callbacks.ItemClickListener <|.. info.Parkhomenko.personaldiary.view.ui.DiariesActivity
+androidx.appcompat.app.AppCompatActivity <|-- info.Parkhomenko.personaldiary.view.ui.DiariesActivity
+androidx.appcompat.app.AppCompatActivity <|-- info.Parkhomenko.personaldiary.view.ui.CRUDActivity
+@enduml

@@ -1,0 +1,4 @@
+#Sat Apr 08 06:06:47 PDT 2023
+base.0=C\:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+renamed.0=classes.dex
+path.0=classes.dex

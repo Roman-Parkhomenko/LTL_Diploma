@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notebook"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.ui.SplashActivity">
+
+    <ImageView
+        android:id="@+id/mLogo"
+        android:layout_width="9dp"
+        android:layout_height="7dp"/>
+       // android:src="@drawable/campo"
+        />
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="LIVE TO LEARN"
+        android:textAlignment="center"
+        android:textColor="@color/colorTitleColor"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PARKHOMENKO ROMAN"
+        android:textAlignment="center"
+        android:textColor="@color/colorTitleColor"
+        android:textSize="24sp" />
+
+</LinearLayout>

@@ -1,0 +1,243 @@
+@startuml
+class DiaryViewModel {
+- DiaryRepository diaryRepository
+- Context context
++ Long insert(Diary)
++ LiveData<List<Diary>> getDiariesLiveData()
++ Integer delete(Diary)
++ Integer update(Diary)
++ Integer deleteAll()
+}
+class App {
++ void onCreate()
+}
+class SectionedExpandableLayoutHelper {
+- LinkedHashMap<Section,ArrayList<Diary>> mSectionDataMap
+- ArrayList<Object> mDataArrayList
+- HashMap<String,Section> mSectionMap
+- SectionedExpandableGridAdapter mSectionedExpandableGridAdapter
+~ RecyclerView mRecyclerView
+- void generateDataList()
++ void notifyDataSetChanged()
++ void addSection(String,ArrayList<Diary>)
++ void addItem(String,Diary)
++ void removeItem(String,Diary)
++ void removeSection(String)
++ void onSectionStateChanged(Section,boolean)
+}
+class DiaryRepository {
+- {static} DiaryDAO diaryDAO
++ LiveData<List<Diary>> selectAllData()
++ Long insertData(Diary)
++ Integer update(Diary)
++ Integer delete(Diary)
++ Integer deleteAll()
+}
+class DiaryRepository.SelectAllDataTask {
+# LiveData<List<Diary>> doInBackground(Void)
+}
+class DiaryRepository.InsertTask {
+# Long doInBackground(Diary)
+}
+class DiaryRepository.UpdateTask {
+# Integer doInBackground(Diary)
+}
+class DiaryRepository.DeleteTask {
+# Integer doInBackground(Diary)
+}
+class DiaryRepository.DeleteAllTask {
+# Integer doInBackground(Void)
+}
+class CacheManager {
++ {static} String SELECTED_DATE
++ {static} List<Diary> ALL_DIARIES_MEMORY_CACHE
++ {static} boolean DIARIES_DIRTY
++ {static} String SELECTED_CATEGORY
+}
+class SplashActivity {
+- ImageView mLogo
+- TextView mainTitle
+- void initializeWidgets()
+- void proceed()
+- void preloadDiaries()
+- void showSplashAnimation()
+# void attachBaseContext(Context)
+# void onCreate(Bundle)
+}
+class DetailActivity {
+- TextView titleTV
+- FloatingActionButton editFAB
+- Diary receivedDiary
+- CollapsingToolbarLayout mCollapsingToolbarLayout
+- void initializeWidgets()
+- void receiveAndShowData()
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
++ void onClick(View)
+# void attachBaseContext(Context)
++ void onBackPressed()
+# void onCreate(Bundle)
+}
+class Diary {
+- String id
+- String title
+- String description
+- String date
+- String timeOfDay
+- String category
++ String getId()
++ void setId(String)
++ String getTitle()
++ void setTitle(String)
++ String getDescription()
++ void setDescription(String)
++ String getDate()
++ void setDate(String)
++ String getTimeOfDay()
++ void setTimeOfDay(String)
++ String getCategory()
++ void setCategory(String)
++ String toString()
+}
+interface DiaryDAO {
+~ long insert(Diary)
+~ int update(Diary)
+~ int delete(Diary)
+~ LiveData<List<Diary>> selectAll()
+~ LiveData<List<Diary>> selectByDate(String)
+~ LiveData<List<Diary>> selectByCategory(String)
+~ int deleteAll()
+}
+class CRUDActivity {
+- EditText titleTxt
+- TextView headerTxt
+- DateTimePickerEditText dateTxt
+- Context c
+- DiaryViewModel diaryViewModel
+- Diary receivedDiary
+- String[] times
+- String[] categories
+- void initializeWidgets()
+- void listenToEditTextClicks()
+- void insertDiary(String,String,String,String,String)
+- void insertData()
+- void updateDiary(String,String,String,String,String)
+- void updateData()
+- void deleteData()
++ void onBackPressed()
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+# void attachBaseContext(Context)
+# void onResume()
+# void onCreate(Bundle)
+}
+class SectionedExpandableGridAdapter {
+- ArrayList<Object> mDataArrayList
+- Context mContext
+- int[] mMaterialColors
+- ItemClickListener mItemClickListener
+- SectionStateChangeListener mSectionStateChangeListener
+- {static} int VIEW_TYPE_SECTION
+- {static} int VIEW_TYPE_ITEM
+- boolean isSection(int)
++ ViewHolder onCreateViewHolder(ViewGroup,int)
++ void onBindViewHolder(ViewHolder,int)
++ int getItemCount()
++ int getItemViewType(int)
+}
+class SectionedExpandableGridAdapter.ViewHolder {
+~ View view
+~ int viewType
+~ TextView sectionTextView
+~ ToggleButton sectionToggleButton
+~ TextView mTitleTxt
+~ MaterialLetterIcon materialLetterIcon
+}
+class Utils {
++ {static} String DATE_FORMAT
++ {static} void show(Context,String)
++ {static} boolean validate(EditText)
++ {static} void clearEditTexts(EditText)
++ {static} void openActivity(Context,Class)
++ {static} void showInfoDialog(AppCompatActivity,String,String)
++ {static} void selectDialogItem(Context,boolean,EditText)
++ {static} Date giveMeDate(String)
++ {static} void sendDiaryToActivity(Context,Diary,Class)
++ {static} Diary receiveDiary(Intent,Context)
++ {static} ArrayList<Diary> getDiariesForThisTimeOfDay(List<Diary>,String)
++ {static} ArrayList<Diary> getDiariesForThisCategory(List<Diary>,String)
++ {static} ArrayList<Diary> getDiariesForThisDate(List<Diary>,String)
++ {static} ArrayList<List<Diary>> getAllDiariesGroupedByDates(List<Diary>)
++ {static} ArrayList<List<Diary>> getAllDiariesGroupedByCategory(List<Diary>)
+}
+interface ItemClickListener {
+~ void itemClicked(Diary)
+~ void itemClicked(Section)
+}
+abstract class MyRoomDB {
+- {static} MyRoomDB myRoomDB
++ {abstract}DiaryDAO diaryDAO()
++ {static} MyRoomDB getInstance(Context)
+}
+interface SectionStateChangeListener {
+~ void onSectionStateChanged(Section,boolean)
+}
+class Section {
+- String name
++ boolean isExpanded
++ String getName()
+}
+class DiariesActivity {
+- RecyclerView rv
+- HorizontalPicker picker
+- BottomNavigationView bottomNavigationView
+- SectionedExpandableLayoutHelper sectionedLayout
+- boolean defaultPage
+- DiaryViewModel diaryViewModel
+- boolean isScrolling
+- ColumnChartView chartView
+- ColumnChartData columnChartData
+- void initializeViews()
+- void listenToBottomNavigationClicks()
+- void listenToRecyclerViewScrolls()
+- void bindTimeManager()
+- void bindDairiesCat()
+- void bindDairies()
+- void reloadDiaries()
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+# void attachBaseContext(Context)
++ void onBackPressed()
++ void onDateSelected(DateTime)
++ void itemClicked(Diary)
++ void itemClicked(Section)
+# void onCreate(Bundle)
+}
+
+
+AndroidViewModel <|-- DiaryViewModel
+Application <|-- App
+SectionStateChangeListener <|.. SectionedExpandableLayoutHelper
+DiaryRepository +.. DiaryRepository.SelectAllDataTask
+AsyncTask <|-- DiaryRepository.SelectAllDataTask
+DiaryRepository +.. DiaryRepository.InsertTask
+AsyncTask <|-- DiaryRepository.InsertTask
+DiaryRepository +.. DiaryRepository.UpdateTask
+AsyncTask <|-- DiaryRepository.UpdateTask
+DiaryRepository +.. DiaryRepository.DeleteTask
+AsyncTask <|-- DiaryRepository.DeleteTask
+DiaryRepository +.. DiaryRepository.DeleteAllTask
+AsyncTask <|-- DiaryRepository.DeleteAllTask
+AppCompatActivity <|-- SplashActivity
+OnClickListener <|.. DetailActivity
+AppCompatActivity <|-- DetailActivity
+Serializable <|.. Diary
+AppCompatActivity <|-- CRUDActivity
+Adapter <|-- SectionedExpandableGridAdapter
+SectionedExpandableGridAdapter +.. SectionedExpandableGridAdapter.ViewHolder
+ViewHolder <|-- SectionedExpandableGridAdapter.ViewHolder
+RoomDatabase <|-- MyRoomDB
+DatePickerListener <|.. DiariesActivity
+ItemClickListener <|.. DiariesActivity
+AppCompatActivity <|-- DiariesActivity
+@enduml

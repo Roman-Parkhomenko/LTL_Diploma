@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_content_paste_black_48dp"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/time_manager"
+        android:enabled="true"
+        android:icon="@drawable/m_info"
+        android:title="Archive"
+        app:showAsAction="ifRoom" />
+
+    <item
+
+        android:id="@+id/action_all_dates"
+        android:enabled="true"
+        android:icon="@drawable/ic_list"
+        android:title="Archive"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_helper"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Helper"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_exit"
+        android:enabled="true"
+        android:icon="@drawable/m_icon_logout"
+        android:title="Exit"
+        app:showAsAction="ifRoom" />
+
+
+
+</menu>

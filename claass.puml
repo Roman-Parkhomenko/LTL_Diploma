@@ -1,0 +1,84 @@
+@startuml
+class info.Parkhomenko.personaldiary.view.ui.SplashActivity {
+- ImageView mLogo
+- TextView mainTitle
+- void initializeWidgets()
+- void proceed()
+- void preloadDiaries()
+- void showSplashAnimation()
+# void attachBaseContext(Context)
+# void onCreate(Bundle)
+}
+class info.Parkhomenko.personaldiary.view.ui.DetailActivity {
+- TextView titleTV
+- FloatingActionButton editFAB
+- Diary receivedDiary
+- CollapsingToolbarLayout mCollapsingToolbarLayout
+- void initializeWidgets()
+- void receiveAndShowData()
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
++ void onClick(View)
+# void attachBaseContext(Context)
++ void onBackPressed()
+# void onCreate(Bundle)
+}
+class info.Parkhomenko.personaldiary.view.ui.DiariesActivity {
+- RecyclerView rv
+- HorizontalPicker picker
+- BottomNavigationView bottomNavigationView
+- SectionedExpandableLayoutHelper sectionedLayout
+- boolean defaultPage
+- DiaryViewModel diaryViewModel
+- boolean isScrolling
+- ColumnChartView chartView
+- ColumnChartData columnChartData
+- void initializeViews()
+- void listenToBottomNavigationClicks()
+- void listenToRecyclerViewScrolls()
+- void bindTimeManager()
+- void bindDairiesCat()
+- void bindDairies()
+- void reloadDiaries()
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+# void attachBaseContext(Context)
++ void onBackPressed()
++ void onDateSelected(DateTime)
++ void itemClicked(Diary)
++ void itemClicked(Section)
+# void onCreate(Bundle)
+}
+class info.Parkhomenko.personaldiary.view.ui.CRUDActivity {
+- EditText titleTxt
+- TextView headerTxt
+- DateTimePickerEditText dateTxt
+- Context c
+- DiaryViewModel diaryViewModel
+- Diary receivedDiary
+- String[] times
+- String[] categories
+- void initializeWidgets()
+- void listenToEditTextClicks()
+- void insertDiary(String,String,String,String,String)
+- void insertData()
+- void updateDiary(String,String,String,String,String)
+- void updateData()
+- void deleteData()
++ void onBackPressed()
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+# void attachBaseContext(Context)
+# void onResume()
+# void onCreate(Bundle)
+}
+
+
+androidx.appcompat.app.AppCompatActivity <|-- info.Parkhomenko.personaldiary.view.ui.SplashActivity
+info.Parkhomenko.personaldiary.view.ui.OnClickListener <|.. info.Parkhomenko.personaldiary.view.ui.DetailActivity
+androidx.appcompat.app.AppCompatActivity <|-- info.Parkhomenko.personaldiary.view.ui.DetailActivity
+com.github.jhonnyx2012.horizontalpicker.DatePickerListener <|.. info.Parkhomenko.personaldiary.view.ui.DiariesActivity
+info.Parkhomenko.personaldiary.view.callbacks.ItemClickListener <|.. info.Parkhomenko.personaldiary.view.ui.DiariesActivity
+androidx.appcompat.app.AppCompatActivity <|-- info.Parkhomenko.personaldiary.view.ui.DiariesActivity
+androidx.appcompat.app.AppCompatActivity <|-- info.Parkhomenko.personaldiary.view.ui.CRUDActivity
+@enduml
