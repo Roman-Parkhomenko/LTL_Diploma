@@ -1,6 +1,7 @@
 package info.Parkhomenko.personaldiary.view.ui;
 
-import android.app.Activity;
 
-public class HelperActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class HelperActivity extends AppCompatActivity {
 }
