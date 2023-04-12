@@ -131,7 +131,7 @@ public class DiariesActivity extends AppCompatActivity
                             break;
                         case R.id.action_helper:
                             defaultPage=false;
-                            Utils.openActivity(this, HelperActivity.class);
+                            Utils.openActivity(this, HelperActivity.class);1
 
 
                             break;
