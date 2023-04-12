@@ -1,0 +1,54 @@
+info/Parkhomenko/personaldiary/App.java
+ info.Parkhomenko.personaldiary.App
+info/Parkhomenko/personaldiary/view/callbacks/SectionStateChangeListener.java
+ info.Parkhomenko.personaldiary.view.callbacks.SectionStateChangeListener
+info/Parkhomenko/personaldiary/view/ui/CRUDActivity.java
+ info.Parkhomenko.personaldiary.view.ui.CRUDActivity
+info/Parkhomenko/personaldiary/common/CacheManager.java
+ info.Parkhomenko.personaldiary.common.CacheManager
+info/Parkhomenko/personaldiary/data/dao/DiaryDAO.java
+ info.Parkhomenko.personaldiary.data.dao.DiaryDAO
+info/Parkhomenko/personaldiary/viewmodel/DiaryViewModel.java
+ info.Parkhomenko.personaldiary.viewmodel.DiaryViewModel
+info/Parkhomenko/personaldiary/view/ui/SplashActivity.java
+ info.Parkhomenko.personaldiary.view.ui.SplashActivity
+ info.Parkhomenko.personaldiary.view.ui.SplashActivity$1
+info/Parkhomenko/personaldiary/BuildConfig.java
+ info.Parkhomenko.personaldiary.BuildConfig
+info/Parkhomenko/personaldiary/data/model/Diary.java
+ info.Parkhomenko.personaldiary.data.model.Diary
+info/Parkhomenko/personaldiary/view/ui/MessageAdapter.java
+ info.Parkhomenko.personaldiary.view.ui.MessageAdapter
+ info.Parkhomenko.personaldiary.view.ui.MessageAdapter$MyViewHolder
+info/Parkhomenko/personaldiary/view/ui/HelperActivity.java
+ info.Parkhomenko.personaldiary.view.ui.HelperActivity
+ info.Parkhomenko.personaldiary.view.ui.HelperActivity$1
+ info.Parkhomenko.personaldiary.view.ui.HelperActivity$2
+info/Parkhomenko/personaldiary/view/ui/Message.java
+ info.Parkhomenko.personaldiary.view.ui.Message
+info/Parkhomenko/personaldiary/data/model/Section.java
+ info.Parkhomenko.personaldiary.data.model.Section
+info/Parkhomenko/personaldiary/view/adapter/SectionedExpandableLayoutHelper.java
+ info.Parkhomenko.personaldiary.view.adapter.SectionedExpandableLayoutHelper
+info/Parkhomenko/personaldiary/data/repository/DiaryRepository.java
+ info.Parkhomenko.personaldiary.data.repository.DiaryRepository
+ info.Parkhomenko.personaldiary.data.repository.DiaryRepository$DeleteAllTask
+ info.Parkhomenko.personaldiary.data.repository.DiaryRepository$DeleteTask
+ info.Parkhomenko.personaldiary.data.repository.DiaryRepository$InsertTask
+ info.Parkhomenko.personaldiary.data.repository.DiaryRepository$SelectAllDataTask
+ info.Parkhomenko.personaldiary.data.repository.DiaryRepository$UpdateTask
+info/Parkhomenko/personaldiary/common/Utils.java
+ info.Parkhomenko.personaldiary.common.Utils
+info/Parkhomenko/personaldiary/data/database/MyRoomDB.java
+ info.Parkhomenko.personaldiary.data.database.MyRoomDB
+info/Parkhomenko/personaldiary/view/adapter/SectionedExpandableGridAdapter.java
+ info.Parkhomenko.personaldiary.view.adapter.SectionedExpandableGridAdapter
+ info.Parkhomenko.personaldiary.view.adapter.SectionedExpandableGridAdapter$1
+ info.Parkhomenko.personaldiary.view.adapter.SectionedExpandableGridAdapter$ViewHolder
+info/Parkhomenko/personaldiary/view/callbacks/ItemClickListener.java
+ info.Parkhomenko.personaldiary.view.callbacks.ItemClickListener
+info/Parkhomenko/personaldiary/view/ui/DetailActivity.java
+ info.Parkhomenko.personaldiary.view.ui.DetailActivity
+info/Parkhomenko/personaldiary/view/ui/DiariesActivity.java
+ info.Parkhomenko.personaldiary.view.ui.DiariesActivity
+ info.Parkhomenko.personaldiary.view.ui.DiariesActivity$1
