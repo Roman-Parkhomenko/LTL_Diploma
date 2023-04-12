@@ -1076,6 +1076,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable diary
+drawable ic_baseline_send_24
 drawable ic_content_paste_black_48dp
 drawable ic_keyboard_arrow_down_white_24dp
 drawable ic_keyboard_arrow_up_white_24dp
@@ -1109,6 +1110,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable refresh
+drawable rounded_corner
 drawable selector_section_toggle
 drawable theme_color
 drawable tooltip_frame_dark
@@ -1158,6 +1160,7 @@ id baseView
 id beginning
 id blocking
 id bottom
+id bottom_layout
 id buttonPanel
 id calligraphy_tag_id
 id categoryTxt
@@ -1247,6 +1250,8 @@ id ld_text_input
 id ld_title
 id ld_top_title
 id left
+id left_chat_text_view
+id left_chat_view
 id line1
 id line3
 id listMode
@@ -1261,6 +1266,7 @@ id mTitleTxt
 id mainTitle
 id masked
 id message
+id message_edit_text
 id middle
 id mini
 id mtrl_child_content_container
@@ -1288,7 +1294,10 @@ id radioGroup
 id radio_by_category
 id radio_by_date
 id rect
+id recycler_view
 id right
+id right_chat_text_view
+id right_chat_view
 id right_icon
 id right_side
 id round_rect
@@ -1314,6 +1323,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id send_btn
 id shortcut
 id showCustom
 id showHome
@@ -1384,6 +1394,7 @@ id viewScientistsCard
 id view_offset_helper
 id viewpump_tag_id
 id visible
+id welcome_text
 id withText
 id wrap
 id wrap_content
@@ -1439,6 +1450,7 @@ layout activity_detail
 layout activity_diaries
 layout activity_helper
 layout activity_splash
+layout chat_item
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar

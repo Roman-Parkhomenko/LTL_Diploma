@@ -51,5 +51,5 @@ dependencies {
     implementation 'io.github.inflationx:viewpump:1.0.0'
     implementation 'com.yarolegovich:lovely-dialog:1.1.0'
     implementation 'com.github.jhonnyx2012:horizontal-picker:1.0.6'
-
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
 }

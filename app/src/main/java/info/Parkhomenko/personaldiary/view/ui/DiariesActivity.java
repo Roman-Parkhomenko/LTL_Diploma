@@ -129,6 +129,12 @@ public class DiariesActivity extends AppCompatActivity
                             bindDairies();
 
                             break;
+                        case R.id.action_helper:
+                            defaultPage=false;
+                            Utils.openActivity(this, HelperActivity.class);
+
+
+                            break;
                         case R.id.action_exit:
 
                             finish();
