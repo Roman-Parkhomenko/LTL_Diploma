@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="info.camposha.personaldiary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:name="info.Parkhomenko.personaldiary.App"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@drawable/agendas"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.SplashActivity"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.DiariesActivity"
+            android:label="Live to Learn" />
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.CRUDActivity"
+            android:label="Редагування задачі "
+            android:parentActivityName="info.Parkhomenko.personaldiary.view.ui.DiariesActivity"
+            android:theme="@style/CRUDTheme" />
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.DetailActivity"
+            android:label="Деталі задачі "
+            android:parentActivityName="info.Parkhomenko.personaldiary.view.ui.DiariesActivity" />
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.HelperActivity"
+            android:label="Деталі задачі "
+            android:parentActivityName="info.Parkhomenko.personaldiary.view.ui.DiariesActivity" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="info.camposha.personaldiary.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>
