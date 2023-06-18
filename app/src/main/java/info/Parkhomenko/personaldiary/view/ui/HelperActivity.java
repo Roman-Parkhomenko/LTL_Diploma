@@ -103,14 +103,14 @@ public class HelperActivity extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/completions")
-                .header("Authorization","Bearer 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")
+                .header("Authorization","Bearer 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")
                 .post(body)
                 .build();
 
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(@NonNull Call call, @NonNull IOException e) {
-                addResponse("Failed to load response due to "+e.getMessage());
+                addResponse("Failed to load response due to "+e.getMessage() + "Sent the type of error to HelpLivetoLearn@gmail.com");
             }
 
             @Override
