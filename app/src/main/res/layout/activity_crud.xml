@@ -101,8 +101,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="16dp"
-                    android:focusable="false"
-                    android:focusableInTouchMode="false"
+                    android:minLines="3"
                     android:hint="Категорія"
                     tools:ignore="MissingPrefix" />
 

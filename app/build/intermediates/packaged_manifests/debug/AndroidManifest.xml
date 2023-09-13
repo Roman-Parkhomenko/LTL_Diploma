@@ -48,6 +48,12 @@
             android:name="info.Parkhomenko.personaldiary.view.ui.HelperActivity"
             android:label="Деталі задачі "
             android:parentActivityName="info.Parkhomenko.personaldiary.view.ui.DiariesActivity" />
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.RegistationActivity"
+            android:label="Реєстрація " />
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.LoginActivity"
+            android:label="Вхід " />
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"

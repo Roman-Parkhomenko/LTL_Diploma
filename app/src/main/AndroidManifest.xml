@@ -18,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="info.Parkhomenko.personaldiary.view.ui.DiariesActivity"
             android:label="Live to Learn"/>
@@ -34,6 +35,13 @@
             android:name="info.Parkhomenko.personaldiary.view.ui.HelperActivity"
             android:label="Деталі задачі "
             android:parentActivityName="info.Parkhomenko.personaldiary.view.ui.DiariesActivity" />
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.RegistationActivity"
+            android:label="Реєстрація "/>
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.LoginActivity"
+            android:label="Вхід "
+            />
     </application>
 
 </manifest>

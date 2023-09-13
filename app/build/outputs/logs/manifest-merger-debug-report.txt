@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
-INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
-INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
-INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-47:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1252afd1dc9f5469c30b4174466bb74f\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [android.helper:datetimepickeredittext:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\04e5ef65a7ddce3cef17cb843926cd3b\jetified-datetimepickeredittext-1.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.yarolegovich:lovely-dialog:1.1.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\b3093e7839dfc9cc29acd75ef97ff77d\jetified-lovely-dialog-1.1.0\AndroidManifest.xml:2:1-12:12
@@ -47,22 +47,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Booblyk\.gradle\
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\b93e2b8a7319b8231fdc1936a598b860\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\f8503f66578d12caa389b09e1e5eca48\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\a81ff3a6f4fe4cdba627ce49c2369465\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
-INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
-INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-47:12
 	package
 		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:3:9-49
 		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-47:12
 		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
 	xmlns:dist
 		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:2:13-69
 	android:versionCode
 		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-39:12
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:1-47:12
 		INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:1:11-69
@@ -75,7 +75,7 @@ ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\m
 	dist:instant
 		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:6:13-32
 application
-ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:8:5-37:19
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:8:5-45:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1252afd1dc9f5469c30b4174466bb74f\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\1252afd1dc9f5469c30b4174466bb74f\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [android.helper:datetimepickeredittext:1.0.0] C:\Users\Booblyk\.gradle\caches\transforms-2\files-2.1\04e5ef65a7ddce3cef17cb843926cd3b\jetified-datetimepickeredittext-1.0.0\AndroidManifest.xml:9:5-20
@@ -129,37 +129,49 @@ ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\m
 	android:name
 		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:18:27-74
 activity#info.Parkhomenko.personaldiary.view.ui.DiariesActivity
-ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:21:9-23:44
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:22:9-24:44
 	android:label
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:23:13-42
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:24:13-42
 	android:name
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:22:13-82
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:23:13-82
 activity#info.Parkhomenko.personaldiary.view.ui.CRUDActivity
-ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:24:9-28:99
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:25:9-29:99
 	android:parentActivityName
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:28:13-96
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:29:13-96
 	android:label
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:27:13-48
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:28:13-48
 	android:theme
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:26:13-45
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:27:13-45
 	android:name
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:25:13-79
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:26:13-79
 activity#info.Parkhomenko.personaldiary.view.ui.DetailActivity
-ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:29:9-32:99
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:30:9-33:99
 	android:parentActivityName
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:32:13-96
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:33:13-96
 	android:label
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:31:13-43
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:32:13-43
 	android:name
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:30:13-81
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:31:13-81
 activity#info.Parkhomenko.personaldiary.view.ui.HelperActivity
-ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:33:9-36:99
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:34:9-37:99
 	android:parentActivityName
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:36:13-96
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:37:13-96
 	android:label
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:35:13-43
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:36:13-43
 	android:name
-		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:34:13-81
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:35:13-81
+activity#info.Parkhomenko.personaldiary.view.ui.RegistationActivity
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:38:9-40:42
+	android:label
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:40:13-40
+	android:name
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:39:13-86
+activity#info.Parkhomenko.personaldiary.view.ui.LoginActivity
+ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:41:9-44:15
+	android:label
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:43:13-34
+	android:name
+		ADDED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:42:13-80
 uses-sdk
 INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml

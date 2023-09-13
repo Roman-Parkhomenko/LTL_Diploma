@@ -1,11 +1,19 @@
 [
     {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_person_outline_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_person_outline_24.png"
+    },
+    {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_google.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\google.png"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_diaries.xml.flat",
@@ -24,12 +32,28 @@
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_email_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_email_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_email_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_email_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_person_outline_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_person_outline_24.png"
+    },
+    {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_m_add.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\m_add.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_email_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_email_24.png"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\menu_new_item_menu.xml.flat",
@@ -48,6 +72,10 @@
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\ic_content_paste_black_48dp.png"
     },
     {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_registation_activity.xml.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\layout\\registation_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
@@ -58,6 +86,10 @@
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_agendas.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\agendas.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\background.png"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_top_to_bottom.xml.flat",
@@ -96,6 +128,14 @@
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_send_24.png"
     },
     {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_info_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_info_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_info_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_info_24.png"
+    },
+    {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
@@ -106,6 +146,14 @@
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_keyboard_arrow_up_white_24dp.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\ic_keyboard_arrow_up_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fb.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\fb.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_person_outline_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_person_outline_24.png"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_section.xml.flat",
@@ -120,6 +168,10 @@
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\selector_section_toggle.xml"
     },
     {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_email_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_email_24.png"
+    },
+    {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_m_info.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\m_info.png"
     },
@@ -132,8 +184,16 @@
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\refresh.png"
     },
     {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_email_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_email_24.png"
+    },
+    {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_person_outline_24.xml.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_person_outline_24.xml"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_list.png.flat",
@@ -152,6 +212,10 @@
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\layout\\row_model.xml"
     },
     {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_person_outline_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_person_outline_24.png"
+    },
+    {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\menu_edit_item_menu.xml.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\menu\\edit_item_menu.xml"
     },
@@ -160,8 +224,16 @@
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_login_activity.xml.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\layout\\login_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_detail_content.xml.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\layout\\detail_content.xml"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_person_outline_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_person_outline_24.png"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -172,8 +244,20 @@
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\rounded_corner.xml"
     },
     {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_info_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_info_24.png"
+    },
+    {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_send_24.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_send_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_twitter.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\twitter.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_person_outline_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_person_outline_24.png"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navigation_main.xml.flat",
@@ -182,6 +266,10 @@
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_info_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_info_24.png"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_send_24.png.flat",
@@ -212,8 +300,20 @@
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\drawable\\ic_keyboard_arrow_down_white_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_info_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_info_24.png"
+    },
+    {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_crud.xml.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\layout\\activity_crud.xml"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_email_24.xml.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_email_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_info_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_info_24.png"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
@@ -222,6 +322,10 @@
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_send_24.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_send_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_info_24.xml.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_info_24.xml"
     },
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_m_icon_logout.png.flat",
@@ -242,5 +346,9 @@
     {
         "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_email_24.png.flat",
+        "source": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_email_24.png"
     }
 ]

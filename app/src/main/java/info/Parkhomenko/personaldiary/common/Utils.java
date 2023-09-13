@@ -83,20 +83,19 @@ public class Utils {
      * This method will allow us show a single select dialog where we can select and return an
      * item to an edittext.
      */
-    public static void selectDialogItem(Context c,boolean category,final EditText itemTxt){
+    public static void selectDialogItem(Context c,boolean timeOfDay,final EditText itemTxt){
         String title = "Вибір категорії";
         String message = "Оберіть категорію для задачі";
 
-        String[] categories ={"Університет","Курси","Іноземні  мови","Спорт","Саморозвиток"};
+         String[] timesOfDay ={"Світанок", "Ранок", "Обід", "Вечір", "Ніч"};
 
-        if(!category){
-            categories = new String[]{"Світанок", "Ранок", "Обід", "Вечір", "Ніч"};
+        if(!timeOfDay){
             title = "Вибір пора доби";
             message = "Оберіть пору доби";
         }
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(c,
-                android.R.layout.simple_list_item_1,categories);
+                android.R.layout.simple_list_item_1, timesOfDay);
         new LovelyChoiceDialog(c)
                 .setTopColorRes(R.color.darkDeepOrange)
                 .setTitle(title)

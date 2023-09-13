@@ -36,7 +36,7 @@ public final class DiaryDAO_Impl implements DiaryDAO {
     this.__insertionAdapterOfDiary = new EntityInsertionAdapter<Diary>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `PersonalDiaryTB`(`id`,`title`,`description`,`date`,`timeOfDay`,`category`) VALUES (?,?,?,?,?,?)";
+        return "INSERT OR ABORT INTO `PersonalDiaryTB`(`id`,`title`,`description`,`date`,`timeOfDay`,`category`,`userID`) VALUES (?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -70,6 +70,11 @@ public final class DiaryDAO_Impl implements DiaryDAO {
           stmt.bindNull(6);
         } else {
           stmt.bindString(6, value.getCategory());
+        }
+        if (value.getUserID() == null) {
+          stmt.bindNull(7);
+        } else {
+          stmt.bindString(7, value.getUserID());
         }
       }
     };
@@ -91,7 +96,7 @@ public final class DiaryDAO_Impl implements DiaryDAO {
     this.__updateAdapterOfDiary = new EntityDeletionOrUpdateAdapter<Diary>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR ABORT `PersonalDiaryTB` SET `id` = ?,`title` = ?,`description` = ?,`date` = ?,`timeOfDay` = ?,`category` = ? WHERE `id` = ?";
+        return "UPDATE OR ABORT `PersonalDiaryTB` SET `id` = ?,`title` = ?,`description` = ?,`date` = ?,`timeOfDay` = ?,`category` = ?,`userID` = ? WHERE `id` = ?";
       }
 
       @Override
@@ -126,10 +131,15 @@ public final class DiaryDAO_Impl implements DiaryDAO {
         } else {
           stmt.bindString(6, value.getCategory());
         }
-        if (value.getId() == null) {
+        if (value.getUserID() == null) {
           stmt.bindNull(7);
         } else {
-          stmt.bindString(7, value.getId());
+          stmt.bindString(7, value.getUserID());
+        }
+        if (value.getId() == null) {
+          stmt.bindNull(8);
+        } else {
+          stmt.bindString(8, value.getId());
         }
       }
     };
@@ -220,6 +230,7 @@ public final class DiaryDAO_Impl implements DiaryDAO {
           final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
           final int _cursorIndexOfTimeOfDay = _cursor.getColumnIndexOrThrow("timeOfDay");
           final int _cursorIndexOfCategory = _cursor.getColumnIndexOrThrow("category");
+          final int _cursorIndexOfUserID = _cursor.getColumnIndexOrThrow("userID");
           final List<Diary> _result = new ArrayList<Diary>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final Diary _item;
@@ -242,6 +253,9 @@ public final class DiaryDAO_Impl implements DiaryDAO {
             final String _tmpCategory;
             _tmpCategory = _cursor.getString(_cursorIndexOfCategory);
             _item.setCategory(_tmpCategory);
+            final String _tmpUserID;
+            _tmpUserID = _cursor.getString(_cursorIndexOfUserID);
+            _item.setUserID(_tmpUserID);
             _result.add(_item);
           }
           return _result;
@@ -289,6 +303,7 @@ public final class DiaryDAO_Impl implements DiaryDAO {
           final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
           final int _cursorIndexOfTimeOfDay = _cursor.getColumnIndexOrThrow("timeOfDay");
           final int _cursorIndexOfCategory = _cursor.getColumnIndexOrThrow("category");
+          final int _cursorIndexOfUserID = _cursor.getColumnIndexOrThrow("userID");
           final List<Diary> _result = new ArrayList<Diary>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final Diary _item;
@@ -311,6 +326,9 @@ public final class DiaryDAO_Impl implements DiaryDAO {
             final String _tmpCategory;
             _tmpCategory = _cursor.getString(_cursorIndexOfCategory);
             _item.setCategory(_tmpCategory);
+            final String _tmpUserID;
+            _tmpUserID = _cursor.getString(_cursorIndexOfUserID);
+            _item.setUserID(_tmpUserID);
             _result.add(_item);
           }
           return _result;
@@ -358,6 +376,7 @@ public final class DiaryDAO_Impl implements DiaryDAO {
           final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
           final int _cursorIndexOfTimeOfDay = _cursor.getColumnIndexOrThrow("timeOfDay");
           final int _cursorIndexOfCategory = _cursor.getColumnIndexOrThrow("category");
+          final int _cursorIndexOfUserID = _cursor.getColumnIndexOrThrow("userID");
           final List<Diary> _result = new ArrayList<Diary>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final Diary _item;
@@ -380,6 +399,9 @@ public final class DiaryDAO_Impl implements DiaryDAO {
             final String _tmpCategory;
             _tmpCategory = _cursor.getString(_cursorIndexOfCategory);
             _item.setCategory(_tmpCategory);
+            final String _tmpUserID;
+            _tmpUserID = _cursor.getString(_cursorIndexOfUserID);
+            _item.setUserID(_tmpUserID);
             _result.add(_item);
           }
           return _result;

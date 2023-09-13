@@ -37,7 +37,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(500);
-                    Utils.openActivity(SplashActivity.this, DiariesActivity.class);
+                    Utils.openActivity(SplashActivity.this, RegistationActivity.class);
                     finish();
                     super.run();
                 } catch (InterruptedException e) {

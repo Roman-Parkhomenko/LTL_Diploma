@@ -1065,6 +1065,7 @@ int drawable abc_vector_test 0x7f08005a
 int drawable agendas 0x7f08005b
 int drawable avd_hide_password 0x7f08005c
 int drawable avd_show_password 0x7f08005d
+int drawable background 0x7f08008f
 int drawable background_day_hover 0x7f08005e
 int drawable background_day_selected 0x7f08005f
 int drawable background_day_today 0x7f080060
@@ -1075,6 +1076,11 @@ int drawable design_ic_visibility_off 0x7f080064
 int drawable design_password_eye 0x7f080065
 int drawable design_snackbar_background 0x7f080066
 int drawable diary 0x7f080067
+int drawable fb 0x7f080090
+int drawable google 0x7f080091
+int drawable ic_baseline_email_24 0x7f080092
+int drawable ic_baseline_info_24 0x7f080093
+int drawable ic_baseline_person_outline_24 0x7f080094
 int drawable ic_baseline_send_24 0x7f080068
 int drawable ic_content_paste_black_48dp 0x7f080069
 int drawable ic_keyboard_arrow_down_white_24dp 0x7f08006a
@@ -1114,6 +1120,7 @@ int drawable selector_section_toggle 0x7f08008b
 int drawable theme_color 0x7f08008c
 int drawable tooltip_frame_dark 0x7f08008d
 int drawable tooltip_frame_light 0x7f08008e
+int drawable twitter 0x7f080095
 int id ALT 0x7f090000
 int id CTRL 0x7f090001
 int id FUNCTION 0x7f090002
@@ -1160,6 +1167,9 @@ int id beginning 0x7f09002a
 int id blocking 0x7f09002b
 int id bottom 0x7f09002c
 int id bottom_layout 0x7f09002d
+int id btnsignin 0x7f09011b
+int id btnsignin1 0x7f09011c
+int id btnsignup 0x7f09011d
 int id buttonPanel 0x7f09002e
 int id calligraphy_tag_id 0x7f09002f
 int id categoryTxt 0x7f090030
@@ -1284,6 +1294,8 @@ int id parallax 0x7f0900a6
 int id parent 0x7f0900a7
 int id parentPanel 0x7f0900a8
 int id parent_matrix 0x7f0900a9
+int id password 0x7f09011e
+int id password1 0x7f09011f
 int id percent 0x7f0900aa
 int id pin 0x7f0900ab
 int id progress_circular 0x7f0900ac
@@ -1294,6 +1306,7 @@ int id radio_by_category 0x7f0900b0
 int id radio_by_date 0x7f0900b1
 int id rect 0x7f0900b2
 int id recycler_view 0x7f0900b3
+int id repassword 0x7f090120
 int id right 0x7f0900b4
 int id right_chat_text_view 0x7f0900b5
 int id right_chat_view 0x7f0900b6
@@ -1361,6 +1374,7 @@ int id textinput_counter 0x7f0900f3
 int id textinput_error 0x7f0900f4
 int id textinput_helper_text 0x7f0900f5
 int id time 0x7f0900f6
+int id timeOfDayTV 0x7f090123
 int id timeOfDayTxt 0x7f0900f7
 int id time_manager 0x7f0900f8
 int id title 0x7f0900f9
@@ -1387,6 +1401,8 @@ int id uniform 0x7f09010d
 int id unlabeled 0x7f09010e
 int id up 0x7f09010f
 int id useLogo 0x7f090110
+int id username 0x7f090121
+int id username1 0x7f090122
 int id vHover 0x7f090111
 int id viewAllMenuItem 0x7f090112
 int id viewScientistsCard 0x7f090113
@@ -1478,6 +1494,7 @@ int layout item_footer_confirm 0x7f0c003a
 int layout item_simple_text 0x7f0c003b
 int layout item_simple_text_multichoice 0x7f0c003c
 int layout layout_section 0x7f0c003d
+int layout login_activity 0x7f0c004d
 int layout mtrl_layout_snackbar 0x7f0c003e
 int layout mtrl_layout_snackbar_include 0x7f0c003f
 int layout notification_action 0x7f0c0040
@@ -1486,6 +1503,7 @@ int layout notification_template_custom_big 0x7f0c0042
 int layout notification_template_icon_group 0x7f0c0043
 int layout notification_template_part_chronometer 0x7f0c0044
 int layout notification_template_part_time 0x7f0c0045
+int layout registation_activity 0x7f0c004e
 int layout row_model 0x7f0c0046
 int layout select_dialog_item_material 0x7f0c0047
 int layout select_dialog_multichoice_material 0x7f0c0048

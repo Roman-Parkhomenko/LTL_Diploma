@@ -221,6 +221,7 @@ public class DiariesActivity extends AppCompatActivity
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     private void bindDairiesCat(){
         List<Diary> diaries = CacheManager.ALL_DIARIES_MEMORY_CACHE;
         radioGroup.setVisibility(View.INVISIBLE);
@@ -229,25 +230,22 @@ public class DiariesActivity extends AppCompatActivity
             picker.setVisibility(View.VISIBLE);
             List<Diary> todayDiaries = Utils.getDiariesForThisDate(diaries,
                     CacheManager.SELECTED_DATE);
-            ArrayList<Diary> UNIVERSITY = Utils.getDiariesForThisCategory(todayDiaries,"Університет");
-            ArrayList<Diary> COURSE = Utils.getDiariesForThisCategory(todayDiaries,"Курси");
-            ArrayList<Diary> LANGUAGES = Utils.getDiariesForThisCategory(todayDiaries,"Іноземні мови");
-            ArrayList<Diary> SPORT = Utils.getDiariesForThisCategory(todayDiaries,"Спорт");
-            ArrayList<Diary> SELFSTUDYING = Utils.getDiariesForThisCategory(todayDiaries,"Саморозвиток");
+        Map<String, Set<Diary>> diariesLists = Utils.getAllDiariesGroupedByCategory(todayDiaries);
+               sectionedLayout = new
+                SectionedExpandableLayoutHelper(this, rv, this,
+                2);
+        for (Map.Entry<String, Set<Diary>> entry : diariesLists.entrySet()) {
+            String category = entry.getKey();
 
-            sectionedLayout = new
-                    SectionedExpandableLayoutHelper(this, rv, this,
-                    2);
-            sectionedLayout.addSection("Університет " +(UNIVERSITY.size() > 0 ? "("+UNIVERSITY.size()+")" :""), UNIVERSITY);
-            sectionedLayout.addSection("Курси "+(COURSE.size() > 0 ?  "("+ COURSE.size()+")"
-                    :""), COURSE);
-            sectionedLayout.addSection("Іноземні мови "+(LANGUAGES.size()> 0 ?
-                    "("+ LANGUAGES.size()+")" :""), LANGUAGES);
-            sectionedLayout.addSection("Спорт "+(SPORT.size()> 0 ?
-                    "("+ SPORT.size()+")" :""), SPORT);
-            sectionedLayout.addSection("Саморозвиток "+(SELFSTUDYING.size()> 0 ?
-                    "("+ SELFSTUDYING.size()+")" :""), SELFSTUDYING);
+            if(category==null || category.length()==0){
+                category="Без категрої";
 
+            }
+            List<Diary> List = new ArrayList<Diary>();
+            List.addAll(entry.getValue());
+            sectionedLayout.addSection(category + " (" + List.size() + ")", (ArrayList<Diary>) List);
+
+        }
         sectionedLayout.notifyDataSetChanged();
     }
 
@@ -301,6 +299,7 @@ public class DiariesActivity extends AppCompatActivity
         sectionedLayout.notifyDataSetChanged();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     private void reloadDiaries() {
         diaryViewModel.getDiariesLiveData().observe(this, diaries -> {
             if (diaries != null && diaries.size() > 0) {
@@ -354,6 +353,7 @@ public class DiariesActivity extends AppCompatActivity
         this.finish();
     }
 
+        @RequiresApi(api = Build.VERSION_CODES.N)
         @Override
         public void onDateSelected(DateTime dateSelected) {
             String year = String.valueOf(dateSelected.getYear());

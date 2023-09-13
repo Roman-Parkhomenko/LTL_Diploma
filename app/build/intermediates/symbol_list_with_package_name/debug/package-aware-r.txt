@@ -1066,6 +1066,7 @@ drawable abc_vector_test
 drawable agendas
 drawable avd_hide_password
 drawable avd_show_password
+drawable background
 drawable background_day_hover
 drawable background_day_selected
 drawable background_day_today
@@ -1076,6 +1077,11 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable diary
+drawable fb
+drawable google
+drawable ic_baseline_email_24
+drawable ic_baseline_info_24
+drawable ic_baseline_person_outline_24
 drawable ic_baseline_send_24
 drawable ic_content_paste_black_48dp
 drawable ic_keyboard_arrow_down_white_24dp
@@ -1115,6 +1121,7 @@ drawable selector_section_toggle
 drawable theme_color
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable twitter
 id ALT
 id CTRL
 id FUNCTION
@@ -1161,6 +1168,9 @@ id beginning
 id blocking
 id bottom
 id bottom_layout
+id btnsignin
+id btnsignin1
+id btnsignup
 id buttonPanel
 id calligraphy_tag_id
 id categoryTxt
@@ -1285,6 +1295,8 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
+id password
+id password1
 id percent
 id pin
 id progress_circular
@@ -1295,6 +1307,7 @@ id radio_by_category
 id radio_by_date
 id rect
 id recycler_view
+id repassword
 id right
 id right_chat_text_view
 id right_chat_view
@@ -1362,6 +1375,7 @@ id textinput_counter
 id textinput_error
 id textinput_helper_text
 id time
+id timeOfDayTV
 id timeOfDayTxt
 id time_manager
 id title
@@ -1388,6 +1402,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
+id username1
 id vHover
 id viewAllMenuItem
 id viewScientistsCard
@@ -1479,6 +1495,7 @@ layout item_footer_confirm
 layout item_simple_text
 layout item_simple_text_multichoice
 layout layout_section
+layout login_activity
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1487,6 +1504,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout registation_activity
 layout row_model
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

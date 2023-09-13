@@ -25,14 +25,14 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 public class CRUDActivity extends AppCompatActivity {
 
     //we'll have several instance fields
-    private EditText titleTxt, descriptionTxt,categoryTxt,timeOfDayTxt;
+    private EditText titleTxt, descriptionTxt,categoryTxt,timeOfDayTxt, categoriesTxt;
     private TextView headerTxt;
     private DateTimePickerEditText dateTxt;
     private final Context c = CRUDActivity.this;
     private DiaryViewModel diaryViewModel;
     private Diary receivedDiary;
     private final String[] times = {"Ранок","Обід","Вечір"};
-    private final String[] categories ={"Університет","Курси","Іноземні мови","Спорт","Саморозвиток"};
+   // private final String[] categories ={"Університет","Курси","Іноземні мови","Спорт","Саморозвиток"};
     private void initializeWidgets() {
         headerTxt = findViewById(R.id.headerTxt);
         titleTxt = findViewById(R.id.titleTxt);
@@ -41,17 +41,18 @@ public class CRUDActivity extends AppCompatActivity {
         timeOfDayTxt = findViewById(R.id.timeOfDayTxt);
         dateTxt = findViewById(R.id.dateTxt);
         dateTxt.setFormat(Utils.DATE_FORMAT);
+        categoriesTxt = findViewById(R.id.categoryTxt);
     }
 
     private void listenToEditTextClicks(){
-        categoryTxt.setOnClickListener(v -> Utils.selectDialogItem(CRUDActivity.this,true,
-        categoryTxt));
+       // categoryTxt.setOnClickListener(v -> Utils.selectDialogItem(CRUDActivity.this,true,
+       // categoryTxt));
         timeOfDayTxt.setOnClickListener(v -> Utils.selectDialogItem(CRUDActivity.this,false,
         timeOfDayTxt));
     }
 
     private void insertDiary(String title, String description, String category, String date,
-     String TimeOfDay) {
+     String TimeOfDay, String categories) {
         Diary diary = new Diary();
         diary.setId(String.valueOf(System.currentTimeMillis()));
         diary.setTitle(title);
@@ -59,7 +60,7 @@ public class CRUDActivity extends AppCompatActivity {
         diary.setCategory(category);
         diary.setDate(date);
         diary.setTimeOfDay(TimeOfDay);
-        diary.setCategory(categories[new Random().nextInt(categories.length)]);
+        diary.setCategory(categories);
         Long result = diaryViewModel.insert(diary);
         if (result != null) {
             if (result > -1) {
@@ -91,7 +92,7 @@ public class CRUDActivity extends AppCompatActivity {
                 return;
             }
 
-            insertDiary(title, description, category,date,timeOfDay);
+            insertDiary(title, description, category,date,timeOfDay,category);
 
         }
     }
