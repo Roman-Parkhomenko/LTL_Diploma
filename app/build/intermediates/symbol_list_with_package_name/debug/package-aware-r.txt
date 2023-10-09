@@ -1140,6 +1140,7 @@ id action_container
 id action_context_bar
 id action_divider
 id action_edit
+id action_exam
 id action_exit
 id action_helper
 id action_home
@@ -1150,7 +1151,6 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_new
-id action_refresh
 id action_switch_view
 id action_text
 id actions
@@ -1464,6 +1464,7 @@ layout abc_tooltip
 layout activity_crud
 layout activity_detail
 layout activity_diaries
+layout activity_exam
 layout activity_helper
 layout activity_splash
 layout chat_item

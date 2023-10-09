@@ -20,7 +20,7 @@
 14-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:6:13-32
 15
 16    <application
-16-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:8:5-47:19
+16-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:8:5-50:19
 17        android:name="info.Parkhomenko.personaldiary.App"
 17-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:9:9-58
 18        android:allowBackup="true"
@@ -84,33 +84,41 @@
 48-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:35:9-38:99
 49            android:name="info.Parkhomenko.personaldiary.view.ui.HelperActivity"
 49-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:36:13-81
-50            android:label="Деталі задачі "
-50-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:37:13-43
+50            android:label="Помічник"
+50-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:37:13-37
 51            android:parentActivityName="info.Parkhomenko.personaldiary.view.ui.DiariesActivity" />
 51-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:38:13-96
 52        <activity
-52-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:40:9-42:42
-53            android:name="info.Parkhomenko.personaldiary.view.ui.RegistationActivity"
-53-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:41:13-86
-54            android:label="Реєстрація " />
-54-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:42:13-40
-55        <activity
-55-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:43:9-46:15
-56            android:name="info.Parkhomenko.personaldiary.view.ui.LoginActivity"
-56-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:44:13-80
-57            android:label="Вхід " />
-57-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:45:13-34
-58
-59        <provider
-59-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-3\75ce63a4a459d742dd2b07ce10982dea\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-60            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-60-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-3\75ce63a4a459d742dd2b07ce10982dea\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-61            android:authorities="info.camposha.personaldiary.lifecycle-process"
-61-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-3\75ce63a4a459d742dd2b07ce10982dea\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-62            android:exported="false"
-62-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-3\75ce63a4a459d742dd2b07ce10982dea\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-63            android:multiprocess="true" />
-63-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-3\75ce63a4a459d742dd2b07ce10982dea\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-64    </application>
-65
-66</manifest>
+52-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:39:9-42:99
+53            android:name="info.Parkhomenko.personaldiary.view.ui.ExamActivity"
+53-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:40:13-79
+54            android:label="Перевірка знань"
+54-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:41:13-44
+55            android:parentActivityName="info.Parkhomenko.personaldiary.view.ui.DiariesActivity" />
+55-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:42:13-96
+56        <activity
+56-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:43:9-45:42
+57            android:name="info.Parkhomenko.personaldiary.view.ui.RegistationActivity"
+57-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:44:13-86
+58            android:label="Реєстрація " />
+58-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:45:13-40
+59        <activity
+59-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:46:9-49:15
+60            android:name="info.Parkhomenko.personaldiary.view.ui.LoginActivity"
+60-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:47:13-80
+61            android:label="Вхід " />
+61-->C:\Users\Booblyk\AndroidStudioProjects\Live_to_Learn-master\app\src\main\AndroidManifest.xml:48:13-34
+62
+63        <provider
+63-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-3\75ce63a4a459d742dd2b07ce10982dea\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+64            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+64-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-3\75ce63a4a459d742dd2b07ce10982dea\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+65            android:authorities="info.camposha.personaldiary.lifecycle-process"
+65-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-3\75ce63a4a459d742dd2b07ce10982dea\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+66            android:exported="false"
+66-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-3\75ce63a4a459d742dd2b07ce10982dea\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+67            android:multiprocess="true" />
+67-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Booblyk\.gradle\caches\transforms-3\75ce63a4a459d742dd2b07ce10982dea\transformed\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+68    </application>
+69
+70</manifest>

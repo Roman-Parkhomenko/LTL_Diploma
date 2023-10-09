@@ -11,9 +11,9 @@
         android:icon="@drawable/m_add"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_refresh"
-        android:title="Refresh"
-        android:icon="@drawable/refresh"
+        android:id="@+id/action_exam"
+        android:title="Exam"
+        android:icon="@android:drawable/btn_star_big_on"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_switch_view"

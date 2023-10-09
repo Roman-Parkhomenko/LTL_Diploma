@@ -136,6 +136,7 @@ public class DiariesActivity extends AppCompatActivity
 
                             break;
 
+
                         case R.id.action_exit:
 
                             finish();
@@ -328,9 +329,11 @@ public class DiariesActivity extends AppCompatActivity
                 Utils.openActivity(this, CRUDActivity.class);
                 finish();
                 return true;
-            case R.id.action_refresh:
-                reloadDiaries();
+            case R.id.action_exam:
+                defaultPage=false;
+                Utils.openActivity(this, ExamActivity.class);
                 return true;
+
             case R.id.action_switch_view:
                 defaultPage = !defaultPage;
               bindDairies();

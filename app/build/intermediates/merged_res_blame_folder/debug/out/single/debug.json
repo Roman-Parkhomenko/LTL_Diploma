@@ -192,10 +192,6 @@
         "source": "C:\\Users\\Booblyk\\.gradle\\daemon\\8.2\\info.Parkhomenko.personaldiary.app-main-21:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "info.Parkhomenko.personaldiary.app-merged_res-19:/menu_bottom_navigation_main.xml.flat",
-        "source": "info.Parkhomenko.personaldiary.app-main-21:/menu/bottom_navigation_main.xml"
-    },
-    {
         "merged": "C:\\Users\\Booblyk\\.gradle\\daemon\\8.2\\info.Parkhomenko.personaldiary.app-merged_res-19:\\drawable-anydpi-v21_ic_baseline_send_24.xml.flat",
         "source": "C:\\Users\\Booblyk\\.gradle\\daemon\\8.2\\info.Parkhomenko.personaldiary.app-pngs-14:\\drawable-anydpi-v21\\ic_baseline_send_24.xml"
     },
@@ -250,6 +246,10 @@
     {
         "merged": "C:\\Users\\Booblyk\\.gradle\\daemon\\8.2\\info.Parkhomenko.personaldiary.app-merged_res-19:\\drawable_m_delete.png.flat",
         "source": "C:\\Users\\Booblyk\\.gradle\\daemon\\8.2\\info.Parkhomenko.personaldiary.app-main-21:\\drawable\\m_delete.png"
+    },
+    {
+        "merged": "info.Parkhomenko.personaldiary.app-merged_res-19:/layout_activity_exam.xml.flat",
+        "source": "info.Parkhomenko.personaldiary.app-main-21:/layout/activity_exam.xml"
     },
     {
         "merged": "C:\\Users\\Booblyk\\.gradle\\daemon\\8.2\\info.Parkhomenko.personaldiary.app-merged_res-19:\\drawable-anydpi-v21_ic_baseline_info_24.xml.flat",

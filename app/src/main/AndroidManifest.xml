@@ -34,9 +34,12 @@
             android:parentActivityName="info.Parkhomenko.personaldiary.view.ui.DiariesActivity" />
         <activity
             android:name="info.Parkhomenko.personaldiary.view.ui.HelperActivity"
-            android:label="Деталі задачі "
+            android:label="Помічник"
             android:parentActivityName="info.Parkhomenko.personaldiary.view.ui.DiariesActivity" />
-
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.ExamActivity"
+            android:label="Перевірка знань"
+            android:parentActivityName="info.Parkhomenko.personaldiary.view.ui.DiariesActivity" />
         <activity
             android:name="info.Parkhomenko.personaldiary.view.ui.RegistationActivity"
             android:label="Реєстрація "/>

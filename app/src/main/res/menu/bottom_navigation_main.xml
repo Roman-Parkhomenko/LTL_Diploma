@@ -24,7 +24,7 @@
     <item
         android:id="@+id/action_helper"
         android:enabled="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@android:drawable/ic_menu_send"
         android:title="Helper"
         android:visible="true"
         app:showAsAction="ifRoom" />
