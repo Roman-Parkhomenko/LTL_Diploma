@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "info.Parkhomenko.personaldiary.app-mergeDebugResources-17:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Booblyk\\.gradle\\caches\\transforms-2\\files-2.1\\89be89f0ed1c432ab4862a3c9cda8fcc\\appcompat-1.0.2\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Booblyk\\.gradle\\caches\\transforms-3\\ef85fd5362cc7fa68aee657c57aa82a5\\transformed\\appcompat-1.0.2\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Booblyk\\.gradle\\caches\\transforms-2\\files-2.1\\1252afd1dc9f5469c30b4174466bb74f\\material-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Booblyk\\.gradle\\caches\\transforms-3\\778be3129337626decdb99cc4a4cd501\\transformed\\material-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

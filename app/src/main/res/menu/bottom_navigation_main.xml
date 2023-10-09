@@ -28,6 +28,7 @@
         android:title="Helper"
         android:visible="true"
         app:showAsAction="ifRoom" />
+
     <item
         android:id="@+id/action_exit"
         android:enabled="true"

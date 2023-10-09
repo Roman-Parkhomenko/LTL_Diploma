@@ -2,6 +2,8 @@ info/Parkhomenko/personaldiary/App.java
  info.Parkhomenko.personaldiary.App
 info/Parkhomenko/personaldiary/view/callbacks/SectionStateChangeListener.java
  info.Parkhomenko.personaldiary.view.callbacks.SectionStateChangeListener
+info/Parkhomenko/personaldiary/view/ui/RegistationActivity.java
+ info.Parkhomenko.personaldiary.view.ui.RegistationActivity
 info/Parkhomenko/personaldiary/view/ui/CRUDActivity.java
  info.Parkhomenko.personaldiary.view.ui.CRUDActivity
 info/Parkhomenko/personaldiary/common/CacheManager.java
@@ -30,6 +32,8 @@ info/Parkhomenko/personaldiary/data/model/Section.java
  info.Parkhomenko.personaldiary.data.model.Section
 info/Parkhomenko/personaldiary/view/adapter/SectionedExpandableLayoutHelper.java
  info.Parkhomenko.personaldiary.view.adapter.SectionedExpandableLayoutHelper
+info/Parkhomenko/personaldiary/data/database/UsersDB.java
+ info.Parkhomenko.personaldiary.data.database.UsersDB
 info/Parkhomenko/personaldiary/data/repository/DiaryRepository.java
  info.Parkhomenko.personaldiary.data.repository.DiaryRepository
  info.Parkhomenko.personaldiary.data.repository.DiaryRepository$DeleteAllTask
@@ -47,6 +51,8 @@ info/Parkhomenko/personaldiary/view/adapter/SectionedExpandableGridAdapter.java
  info.Parkhomenko.personaldiary.view.adapter.SectionedExpandableGridAdapter$ViewHolder
 info/Parkhomenko/personaldiary/view/callbacks/ItemClickListener.java
  info.Parkhomenko.personaldiary.view.callbacks.ItemClickListener
+info/Parkhomenko/personaldiary/view/ui/LoginActivity.java
+ info.Parkhomenko.personaldiary.view.ui.LoginActivity
 info/Parkhomenko/personaldiary/view/ui/DetailActivity.java
  info.Parkhomenko.personaldiary.view.ui.DetailActivity
 info/Parkhomenko/personaldiary/view/ui/DiariesActivity.java

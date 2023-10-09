@@ -25,6 +25,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="info.Parkhomenko.personaldiary.view.ui.SplashActivity"
+            android:exported="true"
             android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

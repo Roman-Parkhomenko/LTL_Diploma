@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Booblyk\\AndroidStudioProjects\\Live_to_Learn-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "info.Parkhomenko.personaldiary.app-mergeDebugResources-17:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Booblyk\\.gradle\\caches\\transforms-2\\files-2.1\\1252afd1dc9f5469c30b4174466bb74f\\material-1.0.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Booblyk\\.gradle\\caches\\transforms-3\\778be3129337626decdb99cc4a4cd501\\transformed\\material-1.0.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Booblyk\\.gradle\\caches\\transforms-2\\files-2.1\\89be89f0ed1c432ab4862a3c9cda8fcc\\appcompat-1.0.2\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Booblyk\\.gradle\\caches\\transforms-3\\ef85fd5362cc7fa68aee657c57aa82a5\\transformed\\appcompat-1.0.2\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

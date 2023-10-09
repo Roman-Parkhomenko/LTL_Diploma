@@ -23,6 +23,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="info.Parkhomenko.personaldiary.view.ui.SplashActivity"
+            android:exported="true"
             android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,6 +47,12 @@
             android:name="info.Parkhomenko.personaldiary.view.ui.HelperActivity"
             android:label="Деталі задачі "
             android:parentActivityName="info.Parkhomenko.personaldiary.view.ui.DiariesActivity" />
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.RegistationActivity"
+            android:label="Реєстрація " />
+        <activity
+            android:name="info.Parkhomenko.personaldiary.view.ui.LoginActivity"
+            android:label="Вхід " />
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"

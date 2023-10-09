@@ -1,0 +1,269 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "info.Parkhomenko.personaldiary.data.repository.DiaryRepository",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_905675319 { 
+   	label=Parkhomenko
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1542228510 { 
+   	label=personaldiary
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   CRUDActivity80751251[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CRUDActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   c: Context [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   categories: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   categoryTxt: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   dateTxt: DateTimePickerEditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   descriptionTxt: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   diaryViewModel: DiaryViewModel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   headerTxt: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   receivedDiary: Diary [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   timeOfDayTxt: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   times: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   titleTxt: EditText [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># attachBaseContext(newBase: Context)</TD></TR>
+<TR><TD ALIGN="LEFT" >- deleteData()</TD></TR>
+<TR><TD ALIGN="LEFT" >- initializeWidgets()</TD></TR>
+<TR><TD ALIGN="LEFT" >- insertData()</TD></TR>
+<TR><TD ALIGN="LEFT" >- insertDiary(title: String, description: String, category: String, date: String, TimeOfDay: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >- listenToEditTextClicks()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onBackPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onCreate(savedInstanceState: Bundle)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onCreateOptionsMenu(menu: Menu): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onOptionsItemSelected(item: MenuItem): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" ># onResume()</TD></TR>
+<TR><TD ALIGN="LEFT" >- updateData()</TD></TR>
+<TR><TD ALIGN="LEFT" >- updateDiary(title: String, description: String, category: String, date: String, timeOfDay: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+DiariesActivity80751251[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DiariesActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   bottomNavigationView: BottomNavigationView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   chartView: ColumnChartView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   columnChartData: ColumnChartData [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   defaultPage: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   diaryViewModel: DiaryViewModel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   isScrolling: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   picker: HorizontalPicker [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   radioGroup: RadioGroup [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   rv: RecyclerView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   sectionedLayout: SectionedExpandableLayoutHelper [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># attachBaseContext(newBase: Context)</TD></TR>
+<TR><TD ALIGN="LEFT" >- bindDairies()</TD></TR>
+<TR><TD ALIGN="LEFT" >- bindDairiesCat()</TD></TR>
+<TR><TD ALIGN="LEFT" >- bindTimeManager()</TD></TR>
+<TR><TD ALIGN="LEFT" >- initializeViews()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ itemClicked(diary: Diary)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ itemClicked(section: Section)</TD></TR>
+<TR><TD ALIGN="LEFT" >- listenToBottomNavigationClicks()</TD></TR>
+<TR><TD ALIGN="LEFT" >- listenToRecyclerViewScrolls()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onBackPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onCreate(savedInstanceState: Bundle)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onCreateOptionsMenu(menu: Menu): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onDateSelected(dateSelected: DateTime)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onOptionsItemSelected(item: MenuItem): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- reloadDiaries()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+DiaryRepository1549803262[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DiaryRepository</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ delete(diary: Diary): Integer</TD></TR>
+<TR><TD ALIGN="LEFT" >+ deleteAll(): Integer</TD></TR>
+<TR><TD ALIGN="LEFT" >+ insertData(diary: Diary): Long</TD></TR>
+<TR><TD ALIGN="LEFT" >+ selectAllData(): LiveData&lt;List&lt;Diary&gt;&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ update(diary: Diary): Integer</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+DiaryViewModel234539372[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DiaryViewModel</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   context: Context [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   diaryRepository: DiaryRepository [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ delete(diary: Diary): Integer</TD></TR>
+<TR><TD ALIGN="LEFT" >+ deleteAll(): Integer</TD></TR>
+<TR><TD ALIGN="LEFT" >+ insert(diary: Diary): Long</TD></TR>
+<TR><TD ALIGN="LEFT" >+ update(diary: Diary): Integer</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SectionedExpandableGridAdapter1217119210[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SectionedExpandableGridAdapter</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   mContext: Context [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mDataArrayList: ArrayList&lt;Object&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mItemClickListener: ItemClickListener [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mMaterialColors: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mSectionStateChangeListener: SectionStateChangeListener [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getItemViewType(position: int): int</TD></TR>
+<TR><TD ALIGN="LEFT" >- isSection(position: int): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onBindViewHolder(holder: ViewHolder, position: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onCreateViewHolder(parent: ViewGroup, viewType: int): ViewHolder</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SectionedExpandableLayoutHelper1217119210[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SectionedExpandableLayoutHelper</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   mDataArrayList: ArrayList&lt;Object&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   mRecyclerView: RecyclerView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mSectionDataMap: LinkedHashMap&lt;Section, ArrayList&lt;Diary&gt;&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mSectionMap: HashMap&lt;String, Section&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mSectionedExpandableGridAdapter: SectionedExpandableGridAdapter [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addItem(section: String, diary: Diary)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ addSection(section: String, diaries: ArrayList&lt;Diary&gt;)</TD></TR>
+<TR><TD ALIGN="LEFT" >- generateDataList()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ notifyDataSetChanged()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onSectionStateChanged(section: Section, isOpen: boolean)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ removeItem(section: String, diary: Diary)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ removeSection(section: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+CRUDActivity80751251 -> DiaryViewModel234539372[label="diaryViewModel
+[0..1]"];
+DiariesActivity80751251 -> DiaryViewModel234539372[label="diaryViewModel
+[0..1]"];
+DiariesActivity80751251 -> SectionedExpandableLayoutHelper1217119210[label="sectionedLayout
+[0..1]"];
+DiaryViewModel234539372 -> DiaryRepository1549803262[label="diaryRepository
+[0..1]"];
+SectionedExpandableGridAdapter1217119210 -> DiariesActivity80751251[label="mItemClickListener
+[0..1]", arrowhead=none];
+SectionedExpandableGridAdapter1217119210 -> SectionedExpandableLayoutHelper1217119210[label="mSectionStateChangeListener
+[0..1]", arrowhead=none];
+SectionedExpandableLayoutHelper1217119210 -> SectionedExpandableGridAdapter1217119210[label="mSectionedExpandableGridAdapter
+[0..1]"];
+    
+}
+@enduml

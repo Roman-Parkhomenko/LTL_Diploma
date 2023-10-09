@@ -30,12 +30,13 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class HelperActivity extends AppCompatActivity {
+public class  HelperActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     TextView welcomeTextView;
     EditText messageEditText;
     ImageButton sendButton;
     List<Message> messageList;
+    JSONArray messageArray ;
     MessageAdapter messageAdapter;
     public static final MediaType JSON
             = MediaType.get("application/json; charset=utf-8");
@@ -49,7 +50,7 @@ public class HelperActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_helper);
         messageList = new ArrayList<>();
-
+        messageArray= new JSONArray();
         recyclerView = findViewById(R.id.recycler_view);
         welcomeTextView = findViewById(R.id.welcome_text);
         messageEditText = findViewById(R.id.message_edit_text);
@@ -78,6 +79,7 @@ public class HelperActivity extends AppCompatActivity {
                 messageList.add(new Message(message,sentBy));
                 messageAdapter.notifyDataSetChanged();
                 recyclerView.smoothScrollToPosition(messageAdapter.getItemCount());
+
             }
         });
     }
@@ -92,22 +94,29 @@ public class HelperActivity extends AppCompatActivity {
         messageList.add(new Message("Typing... ",Message.SENT_BY_BOT));
 
         JSONObject jsonBody = new JSONObject();
+
+
+        JSONObject obj = new JSONObject();
         try {
-            jsonBody.put("model","text-davinci-003");
-            jsonBody.put("prompt",question);
-            jsonBody.put("max_tokens",4000);
-            jsonBody.put("temperature",0);
+            jsonBody.put("model","gpt-3.5-turbo");
+
+
+            obj.put("role", "user");
+            obj.put("content", question);
+            messageArray.put(obj);
+            jsonBody.put("messages",messageArray);
         } catch (JSONException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
-                .url("https://api.openai.com/v1/completions")
-                .header("Authorization","Bearer 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")
+                .url("https://api.openai.com/v1/chat/completions")
+                .header("Authorization","Bearer ")
                 .post(body)
                 .build();
 
         client.newCall(request).enqueue(new Callback() {
+
             @Override
             public void onFailure(@NonNull Call call, @NonNull IOException e) {
                 addResponse("Failed to load response due to "+e.getMessage() + "Sent the type of error to HelpLivetoLearn@gmail.com");
@@ -116,12 +125,18 @@ public class HelperActivity extends AppCompatActivity {
             @Override
             public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
                 if(response.isSuccessful()){
-                    JSONObject  jsonObject = null;
+                    JSONObject  jsonObject;
                     try {
                         jsonObject = new JSONObject(response.body().string());
                         JSONArray jsonArray = jsonObject.getJSONArray("choices");
-                        String result = jsonArray.getJSONObject(0).getString("text");
+                        String result = jsonArray.getJSONObject(0).getJSONObject("message").getString("content");
                         addResponse(result.trim());
+                        JSONObject obj = new JSONObject();
+
+                        obj.put("role", "assistant");
+                        obj.put("content", result);
+                        messageArray.put(obj);
+
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }

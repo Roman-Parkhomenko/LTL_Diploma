@@ -135,6 +135,7 @@ public class DiariesActivity extends AppCompatActivity
 
 
                             break;
+
                         case R.id.action_exit:
 
                             finish();
