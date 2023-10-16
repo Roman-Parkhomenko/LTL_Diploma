@@ -1298,6 +1298,7 @@ id parent_matrix
 id password
 id password1
 id percent
+id pieChart
 id pin
 id progress_circular
 id progress_horizontal
