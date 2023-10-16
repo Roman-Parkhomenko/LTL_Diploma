@@ -1,6 +1,5 @@
 package info.Parkhomenko.personaldiary.view.ui;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
@@ -22,7 +21,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.github.jhonnyx2012.horizontalpicker.DatePickerListener;
 import com.github.jhonnyx2012.horizontalpicker.HorizontalPicker;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
 import org.joda.time.DateTime;
 
@@ -37,7 +35,6 @@ import info.Parkhomenko.personaldiary.common.CacheManager;
 import info.Parkhomenko.personaldiary.common.Utils;
 import info.Parkhomenko.personaldiary.data.model.Diary;
 import info.Parkhomenko.personaldiary.data.model.Section;
-import info.Parkhomenko.personaldiary.data.repository.DiaryRepository;
 import info.Parkhomenko.personaldiary.view.adapter.SectionedExpandableLayoutHelper;
 import info.Parkhomenko.personaldiary.view.callbacks.ItemClickListener;
 import info.Parkhomenko.personaldiary.viewmodel.DiaryViewModel;
@@ -47,9 +44,12 @@ import lecho.lib.hellocharts.model.Axis;
 import lecho.lib.hellocharts.model.AxisValue;
 import lecho.lib.hellocharts.model.Column;
 import lecho.lib.hellocharts.model.ColumnChartData;
+import lecho.lib.hellocharts.model.PieChartData;
+import lecho.lib.hellocharts.model.SliceValue;
 import lecho.lib.hellocharts.model.SubcolumnValue;
 import lecho.lib.hellocharts.util.ChartUtils;
-import lecho.lib.hellocharts.view.ColumnChartView ;
+import lecho.lib.hellocharts.view.ColumnChartView;
+import lecho.lib.hellocharts.view.PieChartView;
 
 public class DiariesActivity extends AppCompatActivity
         implements DatePickerListener, ItemClickListener {
@@ -65,7 +65,9 @@ public class DiariesActivity extends AppCompatActivity
     private  ColumnChartView  chartView;
     private ColumnChartData columnChartData;
     private RadioGroup radioGroup;
-
+    private boolean hasLabels = false;
+    private PieChartView pieChart;
+    private PieChartData data;
     /**
      * We initialize our widgets
      */
@@ -86,6 +88,9 @@ public class DiariesActivity extends AppCompatActivity
 
         chartView=(ColumnChartView ) findViewById(R.id.chart);
         chartView.setVisibility(View.INVISIBLE);
+        pieChart=(PieChartView)  findViewById(R.id.pieChart);
+        pieChart.setVisibility(View.INVISIBLE);
+
         picker= findViewById(R.id.datePicker);
         picker.setListener(this)
                 .setDays(120)
@@ -123,6 +128,8 @@ public class DiariesActivity extends AppCompatActivity
 
 
                             break;
+
+
 
                         case R.id.action_all_dates:
                             defaultPage=false;
@@ -220,7 +227,11 @@ public class DiariesActivity extends AppCompatActivity
         chartView.setValueSelectionEnabled(true);
         chartView.setZoomType(ZoomType.HORIZONTAL);
         chartView.setVisibility(View.VISIBLE);
+
+        bindPieChart();
+
     }
+
 
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -228,7 +239,7 @@ public class DiariesActivity extends AppCompatActivity
         List<Diary> diaries = CacheManager.ALL_DIARIES_MEMORY_CACHE;
         radioGroup.setVisibility(View.INVISIBLE);
         chartView.setVisibility(View.INVISIBLE);
-
+        pieChart.setVisibility(View.INVISIBLE);
             picker.setVisibility(View.VISIBLE);
             List<Diary> todayDiaries = Utils.getDiariesForThisDate(diaries,
                     CacheManager.SELECTED_DATE);
@@ -252,11 +263,49 @@ public class DiariesActivity extends AppCompatActivity
     }
 
 
+    private void bindPieChart(){
+
+        List<Diary> diaries = CacheManager.ALL_DIARIES_MEMORY_CACHE;
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            Map<String, Set<Diary>> diariesLists = Utils.getAllDiariesGroupedByCategory(diaries);
+
+
+
+        List<SliceValue> values = new ArrayList<SliceValue>();
+        for (Map.Entry<String, Set<Diary>> entry : diariesLists.entrySet()) {
+            String category = entry.getKey();
+
+            SliceValue sliceValue = new SliceValue( entry.getValue().size(), ChartUtils.pickColor());
+
+            sliceValue.setLabel(category + " - " + entry.getValue().size());
+            values.add(sliceValue);
+
+
+        }
+
+
+
+        data = new PieChartData(values);
+        data.setHasLabels(true);
+
+        data.setHasLabelsOnlyForSelected(false);
+        data.setHasLabelsOutside(false);
+        data.setHasCenterCircle(false);
+        pieChart.setPieChartData(data);
+        pieChart.setVisibility(View.VISIBLE);
+        }
+    }
+
+
+
+
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     private void bindDairies(){
         List<Diary> diaries = CacheManager.ALL_DIARIES_MEMORY_CACHE;
         chartView.setVisibility(View.INVISIBLE);
+        pieChart.setVisibility(View.INVISIBLE);
         radioGroup.setVisibility(View.VISIBLE);
         picker.setVisibility(View.GONE);
         switch ( radioGroup.getCheckedRadioButtonId()) {
