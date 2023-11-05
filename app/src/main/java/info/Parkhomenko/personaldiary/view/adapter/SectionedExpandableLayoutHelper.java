@@ -22,6 +22,7 @@ public class SectionedExpandableLayoutHelper implements SectionStateChangeListen
     private LinkedHashMap<Section, ArrayList<Diary>> mSectionDataMap = new LinkedHashMap<>();
     private ArrayList<Object> mDataArrayList = new ArrayList<>();
     private HashMap<String, Section> mSectionMap = new HashMap<>();
+    private String text;
 
     //adapter
     private SectionedExpandableGridAdapter mSectionedExpandableGridAdapter;
@@ -61,6 +62,7 @@ public class SectionedExpandableLayoutHelper implements SectionStateChangeListen
         mSectionMap.put(section, (newSection = new Section(section)));
         mSectionDataMap.put(newSection, diaries);
     }
+
 
     public void addItem(String section, Diary diary) {
         Objects.requireNonNull(mSectionDataMap.get(mSectionMap.get(section))).add(diary);

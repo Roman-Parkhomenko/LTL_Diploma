@@ -1,6 +1,7 @@
 package info.Parkhomenko.personaldiary.view.ui;
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.helper.DateTimePickerEditText;
 import android.os.Bundle;
@@ -25,41 +26,43 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 public class CRUDActivity extends AppCompatActivity {
 
     //we'll have several instance fields
-    private EditText titleTxt, descriptionTxt,categoryTxt,timeOfDayTxt, categoriesTxt;
+    private EditText titleTxt, descriptionTxt,categoryTxt,difficultyTxt, categoriesTxt;
+
     private TextView headerTxt;
     private DateTimePickerEditText dateTxt;
     private final Context c = CRUDActivity.this;
     private DiaryViewModel diaryViewModel;
     private Diary receivedDiary;
-    private final String[] times = {"Ранок","Обід","Вечір"};
+    private final String[] dificulties = {"Ранок","Обід","Вечір"};
    // private final String[] categories ={"Університет","Курси","Іноземні мови","Спорт","Саморозвиток"};
+
     private void initializeWidgets() {
         headerTxt = findViewById(R.id.headerTxt);
         titleTxt = findViewById(R.id.titleTxt);
         descriptionTxt = findViewById(R.id.descriptionTxt);
         categoryTxt = findViewById(R.id.categoryTxt);
-        timeOfDayTxt = findViewById(R.id.timeOfDayTxt);
         dateTxt = findViewById(R.id.dateTxt);
         dateTxt.setFormat(Utils.DATE_FORMAT);
         categoriesTxt = findViewById(R.id.categoryTxt);
+        difficultyTxt = findViewById(R.id.dificultyTxt);
     }
 
     private void listenToEditTextClicks(){
-       // categoryTxt.setOnClickListener(v -> Utils.selectDialogItem(CRUDActivity.this,true,
-       // categoryTxt));
-        timeOfDayTxt.setOnClickListener(v -> Utils.selectDialogItem(CRUDActivity.this,false,
-        timeOfDayTxt));
+        // categoryTxt.setOnClickListener(v -> Utils.selectDialogItem(CRUDActivity.this,true,
+        // categoryTxt));
+        difficultyTxt.setOnClickListener(v -> Utils.selectDialogItem(CRUDActivity.this,false,
+                difficultyTxt));
     }
 
     private void insertDiary(String title, String description, String category, String date,
-     String TimeOfDay, String categories) {
+      int difficulty, String categories) {
         Diary diary = new Diary();
         diary.setId(String.valueOf(System.currentTimeMillis()));
         diary.setTitle(title);
         diary.setDescription(description);
         diary.setCategory(category);
         diary.setDate(date);
-        diary.setTimeOfDay(TimeOfDay);
+        diary.setDificulty(difficulty);
         diary.setCategory(categories);
         Long result = diaryViewModel.insert(diary);
         if (result != null) {
@@ -77,12 +80,13 @@ public class CRUDActivity extends AppCompatActivity {
     }
 
     private void insertData() {
-        String title, description, date,category,timeOfDay;
-        if (Utils.validate(titleTxt, descriptionTxt)) {
+        String title, description, date,category;
+        int difficulty = 1;
+        if (Utils.validate(titleTxt, descriptionTxt,difficultyTxt)) {
             title = titleTxt.getText().toString();
             description = descriptionTxt.getText().toString();
             category = categoryTxt.getText().toString();
-            timeOfDay = timeOfDayTxt.getText().toString();
+            difficulty = Integer.parseInt(difficultyTxt.getText().toString());
 
             if (dateTxt.getDate() != null) {
                 date = dateTxt.getFormat().format(dateTxt.getDate());
@@ -92,18 +96,18 @@ public class CRUDActivity extends AppCompatActivity {
                 return;
             }
 
-            insertDiary(title, description, category,date,timeOfDay,category);
+            insertDiary(title, description, category,date,difficulty,category);
 
         }
     }
 
     private void updateDiary(String title, String description,String category, String date,
-    String timeOfDay) {
+    int difficulty) {
         receivedDiary.setTitle(title);
         receivedDiary.setDescription(description);
         receivedDiary.setDate(date);
         receivedDiary.setCategory(category);
-        receivedDiary.setTimeOfDay(timeOfDay);
+        receivedDiary.setDificulty(difficulty);
         Integer result = diaryViewModel.update(receivedDiary);
         if (result != null) {
             if (result > 0) {
@@ -119,11 +123,12 @@ public class CRUDActivity extends AppCompatActivity {
 
     private void updateData() {
         String title, description, date, category, timeOfDay;
+        int difficulty;
         if (Utils.validate(titleTxt, descriptionTxt)) {
             title = titleTxt.getText().toString();
             description = descriptionTxt.getText().toString();
             category = categoryTxt.getText().toString();
-            timeOfDay = timeOfDayTxt.getText().toString();
+            difficulty = Integer.parseInt(difficultyTxt.getText().toString());
 
             if (dateTxt.getDate() != null) {
                 date = dateTxt.getFormat().format(dateTxt.getDate());
@@ -133,7 +138,7 @@ public class CRUDActivity extends AppCompatActivity {
                 return;
             }
 
-            updateDiary(title, description,category, date, timeOfDay);
+            updateDiary(title, description,category, date, difficulty);
 
         }
     }
@@ -223,7 +228,7 @@ public class CRUDActivity extends AppCompatActivity {
             titleTxt.setText(receivedDiary.getTitle());
             descriptionTxt.setText(receivedDiary.getDescription());
             categoryTxt.setText(receivedDiary.getCategory());
-            timeOfDayTxt.setText(receivedDiary.getTimeOfDay());
+            difficultyTxt.setText(receivedDiary.getDificulty());
 
             Object date = receivedDiary.getDate();
             if (date != null) {

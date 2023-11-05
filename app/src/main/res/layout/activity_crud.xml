@@ -104,6 +104,17 @@
                     android:minLines="3"
                     android:hint="Категорія"
                     tools:ignore="MissingPrefix" />
+                <EditText
+                    android:id="@+id/dificultyTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minLines="3"
+                    android:hint="Складність"
+                    tools:ignore="MissingPrefix" />
 
             </LinearLayout>
 
@@ -127,16 +138,6 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@color/niceGreenish" />
 
-                <EditText
-                    android:id="@+id/timeOfDayTxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:focusable="false"
-                    android:focusableInTouchMode="false"
-                    android:hint="Пора доби"
-                    tools:ignore="MissingPrefix" />
 
                 <android.helper.DateTimePickerEditText
                     android:id="@+id/dateTxt"

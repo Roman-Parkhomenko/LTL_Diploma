@@ -27,12 +27,12 @@ public final class MyRoomDB_Impl extends MyRoomDB {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(4) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(5) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `PersonalDiaryTB` (`id` TEXT NOT NULL, `title` TEXT, `description` TEXT, `date` TEXT, `timeOfDay` TEXT, `category` TEXT, `userID` TEXT, PRIMARY KEY(`id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `PersonalDiaryTB` (`id` TEXT NOT NULL, `title` TEXT, `description` TEXT, `date` TEXT, `timeOfDay` TEXT, `category` TEXT, `dificulty` INTEGER NOT NULL, `userID` TEXT, PRIMARY KEY(`id`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"d7b1448ae4cfaee91b732266e6e875f7\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"aa221181de02c0abef2ec2f206e76140\")");
       }
 
       @Override
@@ -62,13 +62,14 @@ public final class MyRoomDB_Impl extends MyRoomDB {
 
       @Override
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsPersonalDiaryTB = new HashMap<String, TableInfo.Column>(7);
+        final HashMap<String, TableInfo.Column> _columnsPersonalDiaryTB = new HashMap<String, TableInfo.Column>(8);
         _columnsPersonalDiaryTB.put("id", new TableInfo.Column("id", "TEXT", true, 1));
         _columnsPersonalDiaryTB.put("title", new TableInfo.Column("title", "TEXT", false, 0));
         _columnsPersonalDiaryTB.put("description", new TableInfo.Column("description", "TEXT", false, 0));
         _columnsPersonalDiaryTB.put("date", new TableInfo.Column("date", "TEXT", false, 0));
         _columnsPersonalDiaryTB.put("timeOfDay", new TableInfo.Column("timeOfDay", "TEXT", false, 0));
         _columnsPersonalDiaryTB.put("category", new TableInfo.Column("category", "TEXT", false, 0));
+        _columnsPersonalDiaryTB.put("dificulty", new TableInfo.Column("dificulty", "INTEGER", true, 0));
         _columnsPersonalDiaryTB.put("userID", new TableInfo.Column("userID", "TEXT", false, 0));
         final HashSet<TableInfo.ForeignKey> _foreignKeysPersonalDiaryTB = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesPersonalDiaryTB = new HashSet<TableInfo.Index>(0);
@@ -80,7 +81,7 @@ public final class MyRoomDB_Impl extends MyRoomDB {
                   + " Found:\n" + _existingPersonalDiaryTB);
         }
       }
-    }, "d7b1448ae4cfaee91b732266e6e875f7", "a54b470700345c01a6af94e33739e5de");
+    }, "aa221181de02c0abef2ec2f206e76140", "20e93739bb51b4eb50e4073f447508eb");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

@@ -24,6 +24,8 @@ public class Diary implements Serializable {
     private String timeOfDay;
     @ColumnInfo(name = "category")
     private String category;
+    @ColumnInfo(name = "dificulty")
+    private int dificulty;
     @ColumnInfo(name = "userID")
     private String userID;
 
@@ -35,6 +37,12 @@ public class Diary implements Serializable {
         this.id = id;
     }
 
+    public int getDificulty() {
+        return dificulty;
+    }
+    public void setDificulty(int dificulty) {
+        this.dificulty = dificulty;
+    }
     public String getTitle() {
         return title;
     }

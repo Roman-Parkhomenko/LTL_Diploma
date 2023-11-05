@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -59,6 +60,7 @@ public class DiariesActivity extends AppCompatActivity
     private HorizontalPicker picker;
     private BottomNavigationView bottomNavigationView;
     private SectionedExpandableLayoutHelper sectionedLayout;
+    private SectionedExpandableLayoutHelper textlayout;
     private boolean defaultPage = true;
     private DiaryViewModel diaryViewModel;
     private boolean isScrolling = false;
@@ -73,24 +75,19 @@ public class DiariesActivity extends AppCompatActivity
      */
     @RequiresApi(api = Build.VERSION_CODES.N)
     private void initializeViews() {
-
          radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         radioGroup.setVisibility(View.INVISIBLE);
         radioGroup.check(R.id.radio_by_date);
         radioGroup.setOnCheckedChangeListener((radioGroup1, i) -> {
-            bindDairies();
-        });
-
+            bindDairies();        });
         rv = findViewById(R.id.mRecyclerView);
         sectionedLayout = new
                 SectionedExpandableLayoutHelper(this,rv, this,
                 2);
-
         chartView=(ColumnChartView ) findViewById(R.id.chart);
         chartView.setVisibility(View.INVISIBLE);
         pieChart=(PieChartView)  findViewById(R.id.pieChart);
         pieChart.setVisibility(View.INVISIBLE);
-
         picker= findViewById(R.id.datePicker);
         picker.setListener(this)
                 .setDays(120)
@@ -108,10 +105,8 @@ public class DiariesActivity extends AppCompatActivity
                 .init();
         picker.setBackgroundColor(Color.LTGRAY);
         picker.setDate(new DateTime());
-
         bottomNavigationView = findViewById(R.id.mBottomNavigation);
-
-    }
+        }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     private void listenToBottomNavigationClicks(){
@@ -235,30 +230,49 @@ public class DiariesActivity extends AppCompatActivity
 
 
     @RequiresApi(api = Build.VERSION_CODES.N)
-    private void bindDairiesCat(){
+    private void bindDairiesCat() {
         List<Diary> diaries = CacheManager.ALL_DIARIES_MEMORY_CACHE;
         radioGroup.setVisibility(View.INVISIBLE);
         chartView.setVisibility(View.INVISIBLE);
         pieChart.setVisibility(View.INVISIBLE);
-            picker.setVisibility(View.VISIBLE);
-            List<Diary> todayDiaries = Utils.getDiariesForThisDate(diaries,
-                    CacheManager.SELECTED_DATE);
+        picker.setVisibility(View.VISIBLE);
+        TextView textView = findViewById(R.id.textView);
+        List<Diary> todayDiaries = Utils.getDiariesForThisDate(diaries,
+                CacheManager.SELECTED_DATE);
+        int sum =0;
+        for (Diary item : todayDiaries)
+        {
+            sum+=  item.getDificulty();
+
+        }
+        int res = 240 - ((sum*30));
+        if (res <0){
+            textView.setText("Коефіцієнт навантаженості на цей день перевищує норму, спробуйте розвантажити цей день");
+        } else if (res >0 && todayDiaries.size()!=0) {
+            textView.setText("Коефіцієнт навантаженості на цей день в межах норми");
+        } else if (todayDiaries.size()==0) {
+            textView.setText("На цей день задач немає, можете відпочити або використати цей день щоб розвантажити себе в інший");
+        }
+
         Map<String, Set<Diary>> diariesLists = Utils.getAllDiariesGroupedByCategory(todayDiaries);
-               sectionedLayout = new
+
+        sectionedLayout = new
                 SectionedExpandableLayoutHelper(this, rv, this,
                 2);
+        List<Diary> List = null;
         for (Map.Entry<String, Set<Diary>> entry : diariesLists.entrySet()) {
             String category = entry.getKey();
 
-            if(category==null || category.length()==0){
-                category="Без категрої";
+            if (category == null || category.length() == 0) {
+                category = "Без категрої";
 
             }
-            List<Diary> List = new ArrayList<Diary>();
+            List = new ArrayList<Diary>();
             List.addAll(entry.getValue());
             sectionedLayout.addSection(category + " (" + List.size() + ")", (ArrayList<Diary>) List);
 
         }
+
         sectionedLayout.notifyDataSetChanged();
     }
 
@@ -333,7 +347,7 @@ public class DiariesActivity extends AppCompatActivity
                     String category = entry.getKey();
 
                     if(category==null || category.length()==0){
-                        category="Без категрої";
+                        category="Без категорії";
 
                     }
                     List<Diary> List = new ArrayList<Diary>();

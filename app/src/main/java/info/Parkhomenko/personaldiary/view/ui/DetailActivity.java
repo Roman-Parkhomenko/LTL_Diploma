@@ -21,7 +21,7 @@
     public class DetailActivity extends AppCompatActivity implements View.OnClickListener {
 
         //Let's define our instance fields
-        private TextView titleTV,descriptionTV,dateTV,descriptionTV2,timeOfDayTV,markAsDoneButton;
+        private TextView titleTV,descriptionTV,dateTV,descriptionTV2,dificultyTV,markAsDoneButton;
         private FloatingActionButton editFAB;
         private Diary receivedDiary;
         private CollapsingToolbarLayout mCollapsingToolbarLayout;
@@ -33,7 +33,7 @@
             titleTV= findViewById(R.id.titleTV);
             descriptionTV= findViewById(R.id.descriptionTV);
             dateTV= findViewById(R.id.dateTV);
-            timeOfDayTV = findViewById(R.id.timeOfDayTV);
+            dificultyTV = findViewById(R.id.dificultyTV);
             descriptionTV2= findViewById(R.id.descriptionTV2);
             editFAB=findViewById(R.id.editFAB);
             editFAB.setOnClickListener(this);
@@ -51,7 +51,7 @@
                  descriptionTV.setText(receivedDiary.getDescription());
                  descriptionTV2.setText(receivedDiary.getCategory());
                  dateTV.setText(receivedDiary.getDate());
-                 timeOfDayTV.setText(receivedDiary.getTimeOfDay());
+                 dificultyTV.setText(String.valueOf(receivedDiary.getDificulty()));
 
                  mCollapsingToolbarLayout.setTitle(receivedDiary.getTitle());
                  mCollapsingToolbarLayout.setExpandedTitleColor(getResources().

@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase;
 import info.Parkhomenko.personaldiary.data.dao.DiaryDAO;
 import info.Parkhomenko.personaldiary.data.model.Diary;
 
-@Database(entities = {Diary.class}, version = 4, exportSchema = false)
+@Database(entities = {Diary.class}, version = 5, exportSchema = false)
 public abstract class MyRoomDB extends RoomDatabase {
 
     private static MyRoomDB myRoomDB;
