@@ -20,8 +20,7 @@ public class Diary implements Serializable {
     private String description;
     @ColumnInfo(name = "date")
     private String date;
-    @ColumnInfo(name = "timeOfDay")
-    private String timeOfDay;
+
     @ColumnInfo(name = "category")
     private String category;
     @ColumnInfo(name = "dificulty")
@@ -65,13 +64,7 @@ public class Diary implements Serializable {
         this.date = date;
     }
 
-    public String getTimeOfDay() {
-        return timeOfDay;
-    }
 
-    public void setTimeOfDay(String timeOfDay) {
-        this.timeOfDay = timeOfDay;
-    }
 
     public String getCategory() {
         return category;

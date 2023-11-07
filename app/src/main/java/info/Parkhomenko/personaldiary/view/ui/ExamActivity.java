@@ -115,7 +115,7 @@ public class  ExamActivity extends AppCompatActivity {
                         "3. you're saying if my answer was correct. If I was incorrect say \"Incorrect!\" " +
                         "and critique my response to each question and provide example answers then ask another question. " +
                         "If I was correct say \"Correct!\" and ask another question.\n" +
-                        "Begin by asking the first question and then waiting for my response. ");
+                        "Begin by asking the first question and then waiting for my response. NB: You should speak in language of the topic provided(Ukrainian or English");
                 i++;
             } else {
                 obj.put("content", question);
@@ -128,7 +128,7 @@ public class  ExamActivity extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonBody.toString(), JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
-                .header("Authorization", "Bearer d")
+                .header("Authorization", "Bearer ")
                 .post(body)
                 .build();
 

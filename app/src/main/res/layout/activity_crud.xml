@@ -22,10 +22,10 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="Сторінка створення задачі"
-            android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/white"
-            tools:ignore="MissingPrefix" />
+            tools:ignore="MissingPrefix"
+            android:gravity="center_horizontal" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/text_padding"
-                    android:text="Для створення задачі заповінть поля для введення потрібними данними. Пам'ятайте, що деякі поля є обов'язковими" />
+                    android:text="Для створення задачі заповінть поля для введення потрібними данними. Пам'ятайте, що деякі поля є обов'язковими. Складність - це час потрібний для виконання задачі. 1 - 30 хв, 2 - 60 хв, 3 - 90хв." />
 
             </LinearLayout>
 

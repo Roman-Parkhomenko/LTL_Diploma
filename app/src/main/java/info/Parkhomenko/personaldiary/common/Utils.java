@@ -144,20 +144,7 @@ public class Utils {
         return null;
     }
 
-    public static ArrayList<Diary> getDiariesForThisTimeOfDay(List<Diary> allDiaries,
-    String timeOfDay){
-        ArrayList<Diary> filteredDiaries = new ArrayList<>();
-        if(allDiaries == null){
-            return filteredDiaries;
-        }
-        for (Diary diary : allDiaries){
-            if (diary != null && diary.getTimeOfDay().equalsIgnoreCase(timeOfDay)){
-                filteredDiaries.add(diary);
-            }
-        }
-        return filteredDiaries;
 
-    }
     public static ArrayList<Diary> getDiariesForThisCategory(List<Diary> allDiaries,
     String category){
         ArrayList<Diary> filteredDiaries = new ArrayList<>();

@@ -68,6 +68,7 @@ public class DiariesActivity extends AppCompatActivity
     private ColumnChartData columnChartData;
     private RadioGroup radioGroup;
     private boolean hasLabels = false;
+    private TextView textView;
     private PieChartView pieChart;
     private PieChartData data;
     /**
@@ -76,6 +77,7 @@ public class DiariesActivity extends AppCompatActivity
     @RequiresApi(api = Build.VERSION_CODES.N)
     private void initializeViews() {
          radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+         textView = (TextView) findViewById(R.id.textView);
         radioGroup.setVisibility(View.INVISIBLE);
         radioGroup.check(R.id.radio_by_date);
         radioGroup.setOnCheckedChangeListener((radioGroup1, i) -> {
@@ -187,6 +189,7 @@ public class DiariesActivity extends AppCompatActivity
     private void bindTimeManager(){
         picker.setVisibility(View.GONE);
         radioGroup.setVisibility(View.INVISIBLE);
+        textView.setVisibility(View.GONE);
 
         sectionedLayout=new
                 SectionedExpandableLayoutHelper(this, rv, this,
@@ -222,7 +225,6 @@ public class DiariesActivity extends AppCompatActivity
         chartView.setValueSelectionEnabled(true);
         chartView.setZoomType(ZoomType.HORIZONTAL);
         chartView.setVisibility(View.VISIBLE);
-
         bindPieChart();
 
     }
@@ -236,6 +238,8 @@ public class DiariesActivity extends AppCompatActivity
         chartView.setVisibility(View.INVISIBLE);
         pieChart.setVisibility(View.INVISIBLE);
         picker.setVisibility(View.VISIBLE);
+        textView.setVisibility(View.VISIBLE);
+
         TextView textView = findViewById(R.id.textView);
         List<Diary> todayDiaries = Utils.getDiariesForThisDate(diaries,
                 CacheManager.SELECTED_DATE);
@@ -322,10 +326,10 @@ public class DiariesActivity extends AppCompatActivity
         pieChart.setVisibility(View.INVISIBLE);
         radioGroup.setVisibility(View.VISIBLE);
         picker.setVisibility(View.GONE);
+        textView.setVisibility(View.GONE);
         switch ( radioGroup.getCheckedRadioButtonId()) {
             case R.id.radio_by_date:
                 ArrayList<List<Diary>> diariesByDateLists = Utils.getAllDiariesGroupedByDates(diaries);
-
                 sectionedLayout = new
                         SectionedExpandableLayoutHelper(this, rv, this,
                         2);
@@ -335,11 +339,9 @@ public class DiariesActivity extends AppCompatActivity
                         sectionedLayout.addSection(dateSection + " (" + list.size() + ")", (ArrayList<Diary>) list);
                     }
                 }
-
                 break;
             case R.id.radio_by_category:
                 Map<String, Set<Diary>> diariesLists = Utils.getAllDiariesGroupedByCategory(diaries);
-
                 sectionedLayout = new
                         SectionedExpandableLayoutHelper(this, rv, this,
                         2);
@@ -353,11 +355,8 @@ public class DiariesActivity extends AppCompatActivity
                     List<Diary> List = new ArrayList<Diary>();
                     List.addAll(entry.getValue());
                     sectionedLayout.addSection(category + " (" + List.size() + ")", (ArrayList<Diary>) List);
-
                 }
-
                 break;
-
             default:
                 break;
         }

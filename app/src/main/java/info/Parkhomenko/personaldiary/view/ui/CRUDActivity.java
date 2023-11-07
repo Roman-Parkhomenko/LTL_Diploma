@@ -76,7 +76,6 @@ public class CRUDActivity extends AppCompatActivity {
         } else {
             Utils.show(this, "UNSUCCESSFUL. ERROR OCCURED");
         }
-
     }
 
     private void insertData() {
@@ -87,7 +86,6 @@ public class CRUDActivity extends AppCompatActivity {
             description = descriptionTxt.getText().toString();
             category = categoryTxt.getText().toString();
             difficulty = Integer.parseInt(difficultyTxt.getText().toString());
-
             if (dateTxt.getDate() != null) {
                 date = dateTxt.getFormat().format(dateTxt.getDate());
             } else {
@@ -95,9 +93,7 @@ public class CRUDActivity extends AppCompatActivity {
                 dateTxt.requestFocus();
                 return;
             }
-
             insertDiary(title, description, category,date,difficulty,category);
-
         }
     }
 
@@ -122,7 +118,7 @@ public class CRUDActivity extends AppCompatActivity {
     }
 
     private void updateData() {
-        String title, description, date, category, timeOfDay;
+        String title, description, date, category;
         int difficulty;
         if (Utils.validate(titleTxt, descriptionTxt)) {
             title = titleTxt.getText().toString();
@@ -137,7 +133,6 @@ public class CRUDActivity extends AppCompatActivity {
                 dateTxt.requestFocus();
                 return;
             }
-
             updateDiary(title, description,category, date, difficulty);
 
         }
@@ -228,7 +223,7 @@ public class CRUDActivity extends AppCompatActivity {
             titleTxt.setText(receivedDiary.getTitle());
             descriptionTxt.setText(receivedDiary.getDescription());
             categoryTxt.setText(receivedDiary.getCategory());
-            difficultyTxt.setText(receivedDiary.getDificulty());
+            difficultyTxt.setText(String.valueOf(receivedDiary.getDificulty()));
 
             Object date = receivedDiary.getDate();
             if (date != null) {
